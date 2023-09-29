@@ -40,6 +40,7 @@ let { covid } = require('./lib/covid.js');
 const { Gempa } = require("./lib/gempa.js");
 
 const spaceemojis = ["🌌", "🌠", "🚀", "🪐", "🌟"];     // list of emojis for Space CMDs.
+const manyemojis = ["😄", "👍", "👏", "👌", "🥇", "🌟", "🎉", "🙌", "🤩", "💯", "🔥", "✨", "🚀", "💖", "🌈", "🌞", "🌠", "🌼", "💪", "😎", "💫", "💓", "🎈", "🎁", "🍾", "🎊", "🥳", "👑", "🌺", "🌻", "🌸"];
 const os = require('os');       // for os info
 
 const gis = require("g-i-s");
