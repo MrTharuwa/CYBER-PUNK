@@ -40,7 +40,7 @@
 <h1 align="center"> ✨  Now Playing  ✨
 </h1>
 
-<p align="center"> <img src="https://novatorem-mu-three.vercel.app/api/spotify" alt="kai0071" /> </p>
+<p align="center"> <img src="https://kai-spotify.vercel.app/api/spotify" alt="kai0071" /> </p>
 
      
  <br>
@@ -240,7 +240,7 @@ npm i -g forever && forever index.js && forever save && forever logs
 <h2 align="center"> ⚙️ If You Want Autoreply/Bot Chat ⚙️
 </h2>
 
-Comment out/delete /* , */ the code form your Core.js line 224,332 in your own repo like -- [`Core.js`](https://github.com/Kai0071/A17/blob/main/Core.js)
+Comment out/delete /* , */ the code form your Core.js  in your own repo -- [`Core.js`](https://github.com/Kai0071/A17/blob/main/Core.js)
 ```js  
    
    /*
@@ -267,6 +267,7 @@ Comment out/delete /* , */ the code form your Core.js line 224,332 in your own r
 </h1>
 
 * [`🎐 FantoX`](https://github.com/FantoX001)
+* [`🎐 Guru`](https://github.com/Guru322)
 * [`🎐 Itz Me`](https://github.com/teamolduser)
 * [`🎐 Ahmii-kun`](https://github.com/Ahmii-kun)
 * [`🎐 Xeon`](https://github.com/DGXeon)
