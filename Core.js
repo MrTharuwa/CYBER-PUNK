@@ -341,13 +341,18 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
       fs.writeFileSync("./storage/user/user.json", JSON.stringify(pendaftar));
     }
 
-    if (global.autoreadpmngc) {
-      if (command) {
-        await A17.sendPresenceUpdate("composing", m.chat);
-        A17.sendReadReceipt(from, m.sender, [m.key.id]);
-      }
-    }
 
+
+    //----------------------------------------------------------------------------------------------------------//
+
+
+
+    // if (global.autoreadpmngc) {
+    //   if (command) {
+    //     await A17.sendPresenceUpdate("composing", m.chat);
+    //     A17.sendReadReceipt(from, m.sender, [m.key.id]);
+    //   }
+    // }
 
 
     //
@@ -363,6 +368,27 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
     //     A17.sendReadReceipt(m.chat, m.sender, [m.key.id]);
     //   }
     // }
+
+
+    if (global.autoreadgc) {
+      if (command) {
+        await A17.sendPresenceUpdate('composing', m.chat);
+
+        // Create an array of message keys to mark as read
+        const keysToMarkAsRead = [
+          {
+            remoteJid: m.chat,
+            id: m.key.id,
+            participant: m.sender,
+          },
+          // You can add more message keys to mark multiple messages as read
+        ];
+
+        // Use the sock object to read the specified messages
+        await A17.readMessages(keysToMarkAsRead);
+      }
+    }
+
 
     if (global.autoRecord) {
       if (m.chat) {
@@ -393,6 +419,10 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
         }    
         
      */
+
+
+
+    //----------------------------------------------------------------------------------------------------//
 
 
 
@@ -789,62 +819,62 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
-        
-  case 'qt': {
-    if (!args[0] && !m.quoted) {
-      return m.reply(`Please provide a text (Type or mention a message) !`);
-    }
-    
-    try {
-      let userPfp;
-      if (m.quoted) {
-        userPfp = await A17.profilePictureUrl(m.quoted.sender, "image");
-      } else {
-        userPfp = await A17.profilePictureUrl(m.sender, "image");
-      }
-  
-      const waUserName = pushname;
-      const quoteText = m.quoted ? m.quoted.body : args.join(" ");
-  
-      const quoteJson = {
-        type: "quote",
-        format: "png",
-        backgroundColor: "#FFFFFF",
-        width: 700,
-        height: 580,
-        scale: 2,
-        messages: [
-          {
-            entities: [],
-            avatar: true,
-            from: {
-              id: 1,
-              name: waUserName,
-              photo: {
-                url: userPfp,
+
+      case 'qt': {
+        if (!args[0] && !m.quoted) {
+          return m.reply(`Please provide a text (Type or mention a message) !`);
+        }
+
+        try {
+          let userPfp;
+          if (m.quoted) {
+            userPfp = await A17.profilePictureUrl(m.quoted.sender, "image");
+          } else {
+            userPfp = await A17.profilePictureUrl(m.sender, "image");
+          }
+
+          const waUserName = pushname;
+          const quoteText = m.quoted ? m.quoted.body : args.join(" ");
+
+          const quoteJson = {
+            type: "quote",
+            format: "png",
+            backgroundColor: "#FFFFFF",
+            width: 700,
+            height: 580,
+            scale: 2,
+            messages: [
+              {
+                entities: [],
+                avatar: true,
+                from: {
+                  id: 1,
+                  name: waUserName,
+                  photo: {
+                    url: userPfp,
+                  },
+                },
+                text: quoteText,
+                replyMessage: {},
               },
-            },
-            text: quoteText,
-            replyMessage: {},
-          },
-        ],
-      };
-  
-      const quoteResponse = await axios.post("https://bot.lyo.su/quote/generate", quoteJson, {
-        headers: { "Content-Type": "application/json" },
-      });
-  
-      const buffer = Buffer.from(quoteResponse.data.result.image, "base64");
-      A17.sendImageAsSticker(m.chat, buffer, m, {
-        packname: `${global.BotName}`,
-        author: waUserName,
-      });
-    } catch (error) {
-      console.error(error);
-      m.reply("Error generating quote!");
-    }
-    break;
-  }
+            ],
+          };
+
+          const quoteResponse = await axios.post("https://bot.lyo.su/quote/generate", quoteJson, {
+            headers: { "Content-Type": "application/json" },
+          });
+
+          const buffer = Buffer.from(quoteResponse.data.result.image, "base64");
+          A17.sendImageAsSticker(m.chat, buffer, m, {
+            packname: `${global.BotName}`,
+            author: waUserName,
+          });
+        } catch (error) {
+          console.error(error);
+          m.reply("Error generating quote!");
+        }
+        break;
+      }
 
 
 
@@ -978,6 +1008,32 @@ Typed *surrender* to surrender and admited defeat`
         reply('Only Owner can use me now!')
         A17.setStatus(`Mode : Self`)
       }
+        break;
+
+
+      case 'autoreadgc':
+      case 'auto-read-gc':
+      case 'readgc':
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!isCreator) return reply(mess.botowner);
+        A17.sendMessage(from, { react: { text: '❤', key: m.key } });
+
+        if (args.length === 0) {
+          // Display the current status of autoreadgc
+          return m.reply(`Auto-Read-GC is currently ${global.autoreadgc ? 'enabled' : 'disabled'}.`);
+        } else if (args.length === 1 && (args[0] === 'on' || args[0] === 'off')) {
+          const status = args[0];
+          if (status === 'on') {
+            global.autoreadgc = true;
+            return m.reply('Auto-Read-GC is now enabled.');
+          } else {
+            global.autoreadgc = false;
+            return m.reply('Auto-Read-GC is now disabled.');
+          }
+        } else {
+          return m.reply(`Usage: ${global.prefa[0]}autoreadgc [on/off]`);
+        }
         break;
 
 
@@ -1916,6 +1972,7 @@ Typed *surrender* to surrender and admited defeat`
           })
       }
         break;
+
 
       case 'chatgpt':
       case 'ai':
