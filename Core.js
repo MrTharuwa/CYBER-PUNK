@@ -2014,31 +2014,22 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
+        const randomEmoji = manyemojis[Math.floor(Math.random() * manyemojis.length)];
+        A17.sendMessage(from, { react: { text: randomEmoji, key: m.key } });
+
         if (!q) return reply(`Please provide a query to generate an image. Example: ${prefix + command} Beautiful landscape`);
 
-        const apiUrl = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(q)}&model=art`;
-        //api source has ratelimit so may generate invalid results sometimes
-        try {
-
-          const response = await fetch(apiUrl);
-
-          if (response.status === 200) {
-
-            const imageUrls = await response.json();
-
-
-            const randomImageUrl = imageUrls.result[Math.floor(Math.random() * imageUrls.result.length)];
-
-            await A17.sendMessage(m.chat, { image: { url: randomImageUrl } }, { quoted: m });
-          } else {
-            reply("Sorry, I couldn't generate an image at the moment.");
-          }
+        const apiUrl = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(q)}`;
+      
+        try{
+            await A17.sendMessage(m.chat, { image: { url: apiUrl } }, { quoted: m });
         } catch (error) {
           console.error(error);
           reply("An error occurred while generating the image.");
         }
       }
         break;
+
 
 
       case 'grupsetting':
@@ -5142,6 +5133,41 @@ _Click the button below to download_`
         // ...
       }
         break;
+
+       case 'spotify': {
+            if (isBan) return reply(mess.banned);
+            if (isBanChat) return reply(mess.bangc);
+            A17.sendMessage(from, { react: { text: "🍁", key: m.key } });
+
+            if (!q) return reply(`Please provide a query. Example: ${prefix + command} 295`);
+
+            let abuffer = `https://www.guruapi.tech/api/spotifydl?url=${encodeURIComponent(q)}`
+            let bbuffer = await fetchJson(`https://www.guruapi.tech/api/spotifyinfo?text=${encodeURIComponent(q)}`)
+    
+            let bimg = bbuffer.spty.results.thumbnail
+            let bname = bbuffer.spty.results.title
+            let burl = bbuffer.spty.results.url;
+            
+            await A17.sendMessage(from, {
+              audio: {url: abuffer},
+              ptt: true,
+              filename: 'error.mp3',
+              mimetype: 'audio/mpeg',
+              contextInfo: {
+                mentionedJid: [m.sender],
+                externalAdReply: {
+                  title: "↺ |◁   II   ▷|   ♡",
+                  body: `Now playing: ${bname}`,
+                  thumbnailUrl: bimg,
+                  sourceUrl: burl,
+                  mediaType: 1,
+                  renderLargerThumbnail: true
+                }
+              }
+            }, { quoted: m }
+             );
+          }
+            break;
 
 
       case 'ytvd': case 'video': case 'ytvideo': case 'ytmp4': {
