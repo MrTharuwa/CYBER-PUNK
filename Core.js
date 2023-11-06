@@ -2736,6 +2736,45 @@ Typed *surrender* to surrender and admited defeat`
       // 🧩 Created At : ${gitdata.ceated_at}
 
 
+      case 'git':
+      case 'gitclone':
+        case 'git-clone':
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+
+        A17.sendMessage(from, { react: { text: "💫", key: m.key } });
+
+        if (!args[0]) {
+          return reply(`Please provide the GitHub repository link.\nExample:\n${prefix}${command} https://github.com/Kai0071/A17`);
+        }
+
+        if (!isUrl(args[0]) || !args[0].includes('github.com')) {
+          return reply(`Invalid or non-GitHub repository link provided. Please use a valid GitHub repository link.`);
+        }
+
+        try {
+          let splitURL = args[0].split('github.com/');
+          if (splitURL.length < 2) throw Error('Invalid GitHub URL');
+
+          let [githubUser, githubRepo] = splitURL[1].split('/');
+          githubRepo = githubRepo.replace('.git', '');
+
+          let gitZipUrl = `https://api.github.com/repos/${githubUser}/${githubRepo}/zipball`;
+
+          await A17.sendMessage(from, { text: `${pushname}, Please wait, downloading...` });
+
+
+          let zipHeaders = await fetch(gitZipUrl, { method: 'HEAD' }).then(res => res.headers);
+          let zipFilename = zipHeaders.get('content-disposition').match(/attachment; filename=(.*)/)[1];
+
+          await A17.sendMessage(m.chat, { document: { url: gitZipUrl }, fileName: zipFilename + '.zip', mimetype: 'application/zip' }, { quoted: m });
+        } catch (err) {
+          console.error(err);
+          return reply(`Failed to fetch the repository contents. Please ensure the GitHub link is correct and accessible. Use the format: 'https://github.com/username/repository'.`);
+        }
+        break;
+
+
       case 'listpc': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
