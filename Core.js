@@ -908,6 +908,67 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
+      case 'addmod':
+      case 'addowner':
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!isCreator) return reply(mess.botowner)
+        A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
+
+        if (!args[0]) return reply(`Use ${prefix + command} number\nExample ${prefix + command} ${OwnerNumber}`)
+        bnnd = q.split("|")[0].replace(/[^0-9]/g, '')
+        let ceknye = await A17.onWhatsApp(bnnd)
+        if (ceknye.length == 0) return reply(`Enter A Valid And Registered Number On WhatsApp!!!`)
+        Owner.push(bnnd)
+        fs.writeFileSync('./database/mod.json', JSON.stringify(Owner))
+        reply(`Number ${bnnd} Has Become An Owner!!!`)
+        break;
+
+
+      case 'delowner':
+      case 'delmod':
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!isCreator) return reply(mess.botowner)
+        A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
+
+        if (!args[0]) return reply(`Use ${prefix + command} nomor\nExample ${prefix + command} 916297175943`)
+        ya = q.split("|")[0].replace(/[^0-9]/g, '')
+        unp = Owner.indexOf(ya)
+        Owner.splice(unp, 1)
+        fs.writeFileSync('./database/mod.json', JSON.stringify(Owner))
+        reply(`The Numbrr ${ya} Has been deleted from owner list by the owner!!!`)
+        break;
+
+
+      case 'modlist':
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!isCreator) return reply(mess.botowner);
+        A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
+
+        try {
+          const modData = fs.readFileSync('./database/mod.json', 'utf8');
+          const mods = JSON.parse(modData);
+
+          if (mods.length === 0) {
+            reply('There are no mods in the list.');
+          } else {
+            let modList = '';
+
+            mods.forEach((mod, index) => {
+              modList += `(${index + 1}) ${A17.getName(mod)}\n`;
+            });
+
+            reply(`List of List of Moderators:\n\n${modList}`);
+          }
+        } catch (error) {
+          console.error(error);
+          reply('Failed to fetch mod list.');
+        }
+        break;
+
+
       case 'setbotpp': {
 
         if (!isCreator) return reply(mess.owner)
@@ -2020,9 +2081,9 @@ Typed *surrender* to surrender and admited defeat`
         if (!q) return reply(`Please provide a query to generate an image. Example: ${prefix + command} Beautiful landscape`);
 
         const apiUrl = `https://gurugpt.cyclic.app/dalle?prompt=${encodeURIComponent(q)}`;
-      
-        try{
-            await A17.sendMessage(m.chat, { image: { url: apiUrl } }, { quoted: m });
+
+        try {
+          await A17.sendMessage(m.chat, { image: { url: apiUrl } }, { quoted: m });
         } catch (error) {
           console.error(error);
           reply("An error occurred while generating the image.");
@@ -2738,7 +2799,7 @@ Typed *surrender* to surrender and admited defeat`
 
       case 'git':
       case 'gitclone':
-        case 'git-clone':
+      case 'git-clone':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
@@ -5173,40 +5234,40 @@ _Click the button below to download_`
       }
         break;
 
-       case 'spotify': {
-            if (isBan) return reply(mess.banned);
-            if (isBanChat) return reply(mess.bangc);
-            A17.sendMessage(from, { react: { text: "🍁", key: m.key } });
+      case 'spotify': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "🍁", key: m.key } });
 
-            if (!q) return reply(`Please provide a query. Example: ${prefix + command} 295`);
+        if (!q) return reply(`Please provide a query. Example: ${prefix + command} 295`);
 
-            let abuffer = `https://www.guruapi.tech/api/spotifydl?url=${encodeURIComponent(q)}`
-            let bbuffer = await fetchJson(`https://www.guruapi.tech/api/spotifyinfo?text=${encodeURIComponent(q)}`)
-    
-            let bimg = bbuffer.spty.results.thumbnail
-            let bname = bbuffer.spty.results.title
-            let burl = bbuffer.spty.results.url;
-            
-            await A17.sendMessage(from, {
-              audio: {url: abuffer},
-              ptt: true,
-              filename: 'error.mp3',
-              mimetype: 'audio/mpeg',
-              contextInfo: {
-                mentionedJid: [m.sender],
-                externalAdReply: {
-                  title: "↺ |◁   II   ▷|   ♡",
-                  body: `Now playing: ${bname}`,
-                  thumbnailUrl: bimg,
-                  sourceUrl: burl,
-                  mediaType: 1,
-                  renderLargerThumbnail: true
-                }
-              }
-            }, { quoted: m }
-             );
+        let abuffer = `https://www.guruapi.tech/api/spotifydl?url=${encodeURIComponent(q)}`
+        let bbuffer = await fetchJson(`https://www.guruapi.tech/api/spotifyinfo?text=${encodeURIComponent(q)}`)
+
+        let bimg = bbuffer.spty.results.thumbnail
+        let bname = bbuffer.spty.results.title
+        let burl = bbuffer.spty.results.url;
+
+        await A17.sendMessage(from, {
+          audio: { url: abuffer },
+          ptt: true,
+          filename: 'error.mp3',
+          mimetype: 'audio/mpeg',
+          contextInfo: {
+            mentionedJid: [m.sender],
+            externalAdReply: {
+              title: "↺ |◁   II   ▷|   ♡",
+              body: `Now playing: ${bname}`,
+              thumbnailUrl: bimg,
+              sourceUrl: burl,
+              mediaType: 1,
+              renderLargerThumbnail: true
+            }
           }
-            break;
+        }, { quoted: m }
+        );
+      }
+        break;
 
 
       case 'ytvd': case 'video': case 'ytvideo': case 'ytmp4': {
