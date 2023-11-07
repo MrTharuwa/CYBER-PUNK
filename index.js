@@ -75,6 +75,23 @@ async function startA17() {
 
   store.bind(A17.ev);
 
+
+ //
+  A17.ws.on('CB:call', async (json) => {
+    const callerId = json.content[0].attrs['call-creator']
+    if (json.content[0].tag === 'offer') {
+      try {
+        let contactMessage = await A17.sendContact(callerId, global.Owner)
+        await A17.sendMessage(callerId, { text: `Automatic Block System!\nDo not call this number!\nPlease unblock this number with permission from the Bot Owner.` }, { quoted: contactMessage })
+        await sleep(8000)
+        await A17.updateBlockStatus(callerId, "block")
+      } catch (error) {
+        console.error(error)
+      }
+    }
+  })
+
+
   A17.ev.on("messages.upsert", async (chatUpdate) => {
     try {
       mek = chatUpdate.messages[0];
