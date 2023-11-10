@@ -41,10 +41,14 @@
   </a>
 </p>
 
+<br>
+<br>
+
 <h1 align="center"> ✨  Now Playing  ✨ </h1>
 
 <p align="center"> <img src="https://kai-spotify.vercel.app/api/spotify" alt="kai0071" /> </p>
-
+<br>
+<br>
 <h2 align="center"> 🔰 Tap Here To Fork 🔰 </h2>
 
 <h2 align="center">
@@ -53,6 +57,9 @@
   </a>
 </h2>
 
+<br>
+<br>
+
 <h2 align="center"> 🍁  Run Repl for Multi Session QR  🍁 </h2>
 
 <h2 align="center">
@@ -60,6 +67,9 @@
     <img src="https://repl.it/badge/github/quiec/whatsasena" />
   </a>
 </h2>
+
+<br>
+<br>
 
 ## Usage
 
@@ -77,6 +87,8 @@ global.OwnerName = "Kai";
 global.BotName = "A17";
 
 ```
+<br>
+<br>
 <h2 align="center"> 🚩  Deploy On Codespace  🚩 </h2>
 
 <h2 align="center">
@@ -84,7 +96,8 @@ global.BotName = "A17";
     <img title="A17 on GitHub Codespaces" src="https://img.shields.io/badge/DEPLOY CODESPACE-h?color=black&style=for-the-badge&logo=visualstudiocode" />
   </a>
 </h2>
-
+<br>
+<br>
 <h2 align="center"> ✨  Deploy On Mogenius  ✨ </h2>
 
 <h2 align="center">
@@ -92,7 +105,8 @@ global.BotName = "A17";
     <img title="A17 on Mogenius" src="https://img.shields.io/badge/DEPLOY MOGENIUS-h?color=blue&style=for-the-badge&logo=genius">
   </a>
 </h2>
-
+<br>
+<br>
 <h2 align="center"> 🍃  Deploy On Railway  🍃 </h2>
 
 <h2 align="center">
@@ -100,7 +114,8 @@ global.BotName = "A17";
     <img title="A17 on Railway" src="https://railway.app/button.svg" />
   </a>
 </h2>
-
+<br>
+<br>
 <h2 align="center"> ❤  Deploy On Heroku  ❤ </h2>
 
 <p align="center">
@@ -108,7 +123,8 @@ global.BotName = "A17";
     <img title="A17 on Heroku" src="https://www.herokucdn.com/deploy/button.png" alt="Deploy on Heroku">
   </a>
 </p>
-
+<br>
+<br>
 <h2 align="center"> Add This 2 Builbpacks On Heroku
 </h2>
 
@@ -118,6 +134,8 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 ```
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
+<br>
+<br>
 
 - Termux
 ```js
@@ -170,7 +188,8 @@ npm start
 ```js
 npm i -g forever && forever index.js && forever save && forever logs
 ```
-
+<br>
+<br>
 <h2 align="center"> 🛡️ Windows Cmd & Vs 🛡️ </h2>
 
 - [Download ffmpeg](https://ffmpeg.org/download.html#build-windows) and set the path
@@ -191,7 +210,8 @@ npm i -g forever && forever index.js && forever save && forever logs
 ```
 > npm start
 ```
-
+<br>
+<br>
 <h2 align="center"> ⚙️ If You Want Autoreply/Bot Chat ⚙️
 </h2>
 
@@ -211,6 +231,8 @@ Comment out/delete /* , */ the code form your Core.js  in your own repo -- [`Cor
     */
    
 ```
+<br>
+<br>
 <h1 align="center">  ⭐ Spacial Thanks To ⭐
 </h1>
 
@@ -222,7 +244,8 @@ Comment out/delete /* , */ the code form your Core.js  in your own repo -- [`Cor
 * [`🎐 Aswin`](https://github.com/Sparkymon777)
 * [`🎐 Pikachu`](https://github.com/PikaBotz)
 * [`🎐 Shubham`](https://github.com/Devil0074)
-
+<br>
+<br>
 <h2 align="center"> ✧ Join My WhatsApp Group For Support ✧ </h2>
 
 <h2 align="center">
@@ -230,11 +253,13 @@ Comment out/delete /* , */ the code form your Core.js  in your own repo -- [`Cor
     <img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
 </h>
-
+<br>
+<br>
 <h2 align="center"> Reminder </h2>
 
 - This bot is not affiliated with `WhatsApp Inc.` Misusing the bot could result in a potential `ban` of your `WhatsApp account` (Please note that a WhatsApp account might be unbanned only once).
 - I am not responsible for any account bans.
 - Use the bot at your own risk, keeping this warning in mind.
-
+<br>
+<br>
 <h1 align="center"> ✧ Thanks To FantoX001 ✧ </h1>
