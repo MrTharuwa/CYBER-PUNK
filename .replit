@@ -1,4 +1,3 @@
-
 hidden = [".config", "yarn.lock"]
 run = "yarn start"
 entrypoint = "index.js"
@@ -20,7 +19,6 @@ requiredFiles = [".replit", "replit.nix", ".config", "package.json", "package-lo
 
 [packager]
 language = "nodejs"
-
   [packager.features]
   packageSearch = true
   guessImports = true
@@ -31,15 +29,12 @@ language = "nodejs"
 
 [debugger]
 support = true
-
   [debugger.interactive]
   transport = "localhost:0"
-  startCommand = [ "dap-node" ]
-
+  startCommand = ["dap-node"]
     [debugger.interactive.initializeMessage]
     command = "initialize"
     type = "request"
-
       [debugger.interactive.initializeMessage.arguments]
       clientID = "replit"
       clientName = "replit.com"
@@ -52,12 +47,10 @@ support = true
       supportsRunInTerminalRequest = true
       supportsVariablePaging = true
       supportsVariableType = true
-
     [debugger.interactive.launchMessage]
     command = "launch"
     type = "request"
-    
-      [debugger.interactive.launchMessage.arguments]  
+      [debugger.interactive.launchMessage.arguments]
       args = []
       console = "externalTerminal"
       cwd = "."
