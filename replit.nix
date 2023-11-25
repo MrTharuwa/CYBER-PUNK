@@ -2,7 +2,7 @@
     deps = [
         pkgs.ffmpeg
         pkgs.git
-        pkgs.nodejs-19_x
+        pkgs.nodejs-18_x
         pkgs.nodePackages.typescript
         pkgs.libwebp
         pkgs.python
