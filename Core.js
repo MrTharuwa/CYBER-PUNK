@@ -7193,17 +7193,16 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   } catch (err) {
     A17.sendMessage(`${ownertag}@s.whatsapp.net`, util.format(err), { quoted: m })
     console.log(err)
-  }
-}
-
-let e = String(err)
-if (e.includes("not-authorized")) return
+    let e = String(err)
+    if (e.includes("not-authorized")) return
 if (e.includes("already-exists")) return
 if (e.includes("rate-overlimit")) return
 if (e.includes("Connection Closed")) return
 if (e.includes("Timed Out")) return
 if (e.includes("Value not found")) return
 if (e.includes("Socket connection timeout")) return
+  }
+}
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
