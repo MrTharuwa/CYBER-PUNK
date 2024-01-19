@@ -2708,7 +2708,6 @@ Typed *surrender* to surrender and admited defeat`
         if (m.sender != '916297175943@s.whatsapp.net') { return; }
 
         if (isBanChat) return reply(mess.bangc);
-        if (m.isGroup) reply(mess.privateonly)
 
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
