@@ -4578,6 +4578,25 @@ Typed *surrender* to surrender and admited defeat`
         break;
 
 
+        case 'aju': case 'campus': case 'imgaju':
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        if (!m.isGroup) return reply(mess.grouponly);
+        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+
+        const aju = {
+          image: { url: 'https://campus-pictures.onrender.com/' },
+          caption: `${pushname} here you go...`,
+         
+        }
+
+        await A17.sendMessage(m.chat, aju, { quoted: m }).catch(err => {
+          return ('Error!')
+        })
+
+        break;
+
+
       case 'earthquake':
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
