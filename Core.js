@@ -6799,16 +6799,16 @@ _Click the button below to download_`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-        const helpmenu = `Hemlo *${pushname}* Dear...!! ${nowtime} ,
+        const helpmenu = `Hellow *${pushname}* Dear...!! ${nowtime} ,
   
-Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Whatsapp bot.
 
 
   ⌯    *Time* : ${kaitime}
   ⌯    *Date* : ${kaidate}
+  ☆⦁──────────────⦁☆
 
-
-  〢━━━ 〄 Bot Info 〄 ━━━〢
+  *❘❘────Bᴏᴛ Iɴꜰᴏ────❘❘*
 
 
   ⌯    *Bot usr name :* ${pushname} 
@@ -6818,22 +6818,8 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯    *Platform :* Linux
 
 
-  〢━━━ 〄 Core 〄 ━━━〢
-
-
-  ⌯     ${prefix}repo
-  ⌯     ${prefix}script
-  ⌯     ${prefix}speak
-  ⌯     ${prefix}support
-  ⌯     ${prefix}stalk
-  ⌯     ${prefix}setprefix
-  ⌯     ${prefix}auto-status
-  ⌯     ${prefix}auto-typing
-  ⌯     ${prefix}auto-recoding
-
-
-  〢━━━ ⌬ Owner Only ⌬ ━━━〢
-
+  
+  *❘❘────Oᴡɴᴇʀ Cᴏᴍᴍᴀɴᴅꜱ────❘❘*
 
   ⌯     ${prefix}join
   ⌯     ${prefix}self
@@ -6855,7 +6841,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}ban del
 
  
-  〢━━ ❅ Group Moderation ❅ ━━〢
+  *❘❘────Gʀᴏᴜᴘ Mᴏᴅᴇʀᴀᴛɪᴏɴ────❘❘*
 
 
   ⌯     ${prefix}add
@@ -6876,21 +6862,8 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}nsnfwmenu
 
 
-  〢━━━❗ *Anti Link ❗* ━━━〢
-
   
-  ⌯     ${prefix}antilinkgc
-  ⌯     ${prefix}antilinktt
-  ⌯     ${prefix}antilinkytch
-  ⌯     ${prefix}antilinkytch
-  ⌯     ${prefix}antilinkig
-  ⌯     ${prefix}antilinkfb
-  ⌯     ${prefix}antilinktwit
-  ⌯     ${prefix}antiwame
-  ⌯     ${prefix}antilinkall
-  
-
-  〢━━━ 🔍 *Search* 🔎 ━━━〢
+  *❘❘────Dᴏᴡɴʟᴏᴀᴅ Cᴏᴍᴍᴀɴᴅꜱ────❘❘*
   
  
   ⌯     ${prefix}play
@@ -6908,23 +6881,21 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}image
   ⌯     ${prefix}searchgc
   ⌯     ${prefix}wikimedia
+  ⌯     ${prefix}ytvideo
+  ⌯     ${prefix}mediafire
+  ⌯     ${prefix}instagram
+  ⌯     ${prefix}igtv
+  ⌯     ${prefix}facebook
+  ⌯     ${prefix}fbmp3
+  ⌯     ${prefix}twitter
+  ⌯     ${prefix}twittermp3
+  ⌯     ${prefix}tiktok
+  ⌯     ${prefix}tiktokaudio
+  ⌯     ${prefix}happymod
+  ⌯     ${prefix}tiktoknowm
 
 
-  〢━━━ 📈 *Economy* 📈 ━━━〢
-
-
-  ⌯     ${prefix}daily 
-  ⌯     ${prefix}wallet
-  ⌯     ${prefix}bank
-  ⌯     ${prefix}bankupgrade
-  ⌯     ${prefix}deposit
-  ⌯     ${prefix}withdraw 
-  ⌯     ${prefix}rob / attack
-  ⌯     ${prefix}transfer / give
-  ⌯     ${prefix}wealth / ritual
-
-
-  〢━━━ 🎮 *Games* 🎮 ━━━〢
+  *❘❘────🔮Gᴀᴍᴇꜱ🔮────❘❘*
 
 
   ⌯     ${prefix}ttt / tictactoe
@@ -6934,7 +6905,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}gamble / lottery
  
 
-  〢━━━ 🛠️ *Convert* 🛠️ ━━━〢
+  *❘❘────Cᴏɴᴠᴇʀᴛ────❘❘*
  
 
   ⌯     ${prefix}sticker
@@ -6949,7 +6920,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}emojimix
 
 
-  〢━━━ ◈ Sound Edit ◈ ━━━〢
+  *❘❘────Sᴏᴜɴᴅ Eᴅɪᴛ────❘❘*
 
 
   ⌯     ${prefix}ringtone
@@ -6967,7 +6938,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}reverse
 
 
-  〢━━━ 📍 *Reactions* 📍 ━━━〢
+  *❘❘────🦄Rᴇᴀᴄᴛɪᴏɴꜱ🦄────❘❘*
  
 
   ⌯     ${prefix}cuddle
@@ -6997,24 +6968,8 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}cringe
 
 
-  〢━━ 🌌 *Downloader* 🌌 ━━〢
  
-
-  ⌯     ${prefix}ytvideo
-  ⌯     ${prefix}mediafire
-  ⌯     ${prefix}instagram
-  ⌯     ${prefix}igtv
-  ⌯     ${prefix}facebook
-  ⌯     ${prefix}fbmp3
-  ⌯     ${prefix}twitter
-  ⌯     ${prefix}twittermp3
-  ⌯     ${prefix}tiktok
-  ⌯     ${prefix}tiktokaudio
-  ⌯     ${prefix}happymod
-  ⌯     ${prefix}tiktoknowm
-
- 
-  〢━━━ 🎐 *Fun* 🎐 ━━━〢
+  *❘❘────😏Fᴜɴ😏────❘❘*
   
 
   ⌯     ${prefix}reaction
@@ -7034,7 +6989,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}lovelycheck
 
 
-  〢━━━ 🈴 *Weeb* 🈴 ━━━〢
+  *❘❘────☀Wᴇᴇʙ☀────❘❘*
 
   
   ⌯     ${prefix}anime
@@ -7061,7 +7016,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}animequote
  
 
-  〢━━━ ♨️ *Informative* ♨️ ━━━〢
+  *❘❘────Iɴꜰᴏʀᴍᴀᴛɪᴠᴇ────❘❘*
   
 
   ⌯     ${prefix}quote
@@ -7072,7 +7027,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}stalknumber
 
 
-  〢━━━ 🪁 *Essentials* 🪁 ━━━〢
+  *❘❘────Eꜱꜱᴇɴᴛɪᴀʟꜱ────❘❘*
  
   
   ⌯     ${prefix}qr
@@ -7082,7 +7037,7 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}translate, 
   
  
-  〢━━━ 🎗 *Others* 🎗 ━━━〢
+  *❘❘────🌀 Oᴛʜᴇʀꜱ 🌀────❘❘*
 
 
   ⌯     ${prefix}stickermeme
@@ -7091,29 +7046,70 @@ Hemlo, I am "A17" a WhatsApp bot create and recode by Kai to do everything that 
   ⌯     ${prefix}afk
   ⌯     ${prefix}darkjoke
   
+ 
+  *❘❘────💰Eᴄᴏɴᴏᴍʏ💰────❘❘*
 
+
+  ⌯     ${prefix}daily 
+  ⌯     ${prefix}wallet
+  ⌯     ${prefix}bank
+  ⌯     ${prefix}bankupgrade
+  ⌯     ${prefix}deposit
+  ⌯     ${prefix}withdraw 
+  ⌯     ${prefix}rob / attack
+  ⌯     ${prefix}transfer / give
+  ⌯     ${prefix}wealth / ritual
+
+
+  *❘❘────❗Aɴᴛɪ Lɪɴᴋ ❗────❘❘*
+
+  
+  ⌯     ${prefix}antilinkgc
+  ⌯     ${prefix}antilinktt
+  ⌯     ${prefix}antilinkytch
+  ⌯     ${prefix}antilinkytch
+  ⌯     ${prefix}antilinkig
+  ⌯     ${prefix}antilinkfb
+  ⌯     ${prefix}antilinktwit
+  ⌯     ${prefix}antiwame
+  ⌯     ${prefix}antilinkall
+  
+  *❘❘────Cᴏʀᴇ────❘❘*
+  
+  
+  ⌯     ${prefix}repo
+  ⌯     ${prefix}script
+  ⌯     ${prefix}speak
+  ⌯     ${prefix}support
+  ⌯     ${prefix}stalk
+  ⌯     ${prefix}setprefix
+  ⌯     ${prefix}auto-status
+  ⌯     ${prefix}auto-typing
+  ⌯     ${prefix}auto-recoding
+  
+  
   〢━━━ ⚠️ *NSFW* ⚠️ ━━━〢
  
  
-  ⌯   🍁 Type *${prefix}nsfw* then enable 
+  ⌯   🔮 Type *${prefix}nsfw* then enable 
   ⌯       NSFW (Admin only!)
   ⌯    
-  ⌯   🍁 Then type *${prefix}nsfwmenu* for
+  ⌯   🔮 Then type *${prefix}nsfwmenu* for
   ⌯       all NSFW commands.
   ⌯    
   ⌯   『  *${global.BotName}*  』
   ⌯       Developed By: *Kai*
   ⌯    
-  ⌯   🍁 To use any of these
+  ⌯   🔮 To use any of these
   ⌯       commands type.
   ⌯    
   ⌯   *${prefix}<Command name>*.
   ⌯    
-  ⌯   🍁 To get Support Group link
+  ⌯   🔮 To get Support Group link
   ⌯     type *${prefix}support*.
   ⌯    
   ⌯    
-  ⌯   🍁 Type *${prefix}help* to get
+  ⌯   🔮 Type *${prefix}help* to get
   ⌯       full command list.
   ┬│▸
   ╰────────────···▸`
