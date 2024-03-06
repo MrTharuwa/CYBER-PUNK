@@ -723,12 +723,12 @@ Typed *surrender* to surrender and admited defeat`
       case 'sc': case 'script': case 'sourcecode': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "❤", key: m.key } })
+        A17.sendMessage(from, { react: { text: "⚡", key: m.key } })
 
-        let { data } = await axios.get('https://api.github.com/repos/Kai0071/A17');
-        teks = `*A17 Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/Kai0071/A17\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+        let { data } = await axios.get('https://api.github.com/repos/https://github.com/MrTharuwa/CYBER-PUNK');
+        teks = `*A17 Script*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/MrTharuwa/CYBER-PUNK\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
         /*  let buttons = [
-          {buttonId: `${prefix}owner`, buttonText: {displayText: '🍁 DEVELOPER 🍁'}, type: 1}
+          {buttonId: `${prefix}owner`, buttonText: {displayText: '📍 DEVELOPER 📍'}, type: 1}
           ] */
         let buttonMessage = {
           image: Thumb,
@@ -820,7 +820,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ *My developer's group:* http://gg.gg/gc-support`)
+        reply(`⚙ *Support group:* https://chat.whatsapp.com/GnhXCwmfFZy8t9IL3t64xw`)
       }
         break;
 
@@ -830,7 +830,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
-        reply(`⚙ My Source Code is </> - https://github.com/Kai0071/A17`)
+        reply(`⚙ My Source Code is </> - https://github.com/MrTharuwa/CYBER-PUNK`)
       }
         break;
 
@@ -1152,7 +1152,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!isCreator) return reply(mess.botowner)
-        A17.sendMessage(from, { react: { text: '❤', key: m.key } });
+        A17.sendMessage(from, { react: { text: '👁', key: m.key } });
 
         if (args.length === 0) {
           // Display the current status of autostatus
@@ -5083,7 +5083,7 @@ _Click the button below to download_`
       
       ⏳ *Duration :* ${anu.timestamp}
       
-      📈 *Viewers :* ${anu.views}
+      👁 *Viewers :* ${anu.views}
       
       📍 *Uploaded :* ${anu.ago}
       
@@ -5091,7 +5091,7 @@ _Click the button below to download_`
       
       🔗 *Url :* ${anu.url}
       
-   *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᵗᵐ*`,
+   *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`,
          
        footer: `${global.BotName}`,
        buttons: buttons,
@@ -5109,7 +5109,7 @@ _Click the button below to download_`
       // case 'play': case 'song': case 'music': {
       //   if (isBan) return reply(mess.banned);	 			
       //   if (isBanChat) return reply(mess.bangc);
-      //   A17.sendMessage(from, { react: { text: "🎶" , key: m.key }}) 
+      //   A17.sendMessage(from, { react: { text: "🍁" , key: m.key }}) 
       //   const YT=require('./lib/ytdl-core')
       //   let yts = require("youtube-yts")
       //   let search = await yts(text)
@@ -5126,7 +5126,7 @@ _Click the button below to download_`
       case 'music': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🍁", key: m.key } });
+        A17.sendMessage(from, { react: { text: "🎶", key: m.key } });
 
         const YT = require('./lib/ytdl-core');
         const yts = require('youtube-yts');
@@ -5154,8 +5154,8 @@ _Click the button below to download_`
   🏮 *Video Uploaded:* ${anu.ago}
 
   🔗 *Url :* ${anu.url}\n
- 
- *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᵗᵐ*`,
+  
+  *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`,
 
           },
           { quoted: m }
@@ -5177,7 +5177,7 @@ _Click the button below to download_`
       case 'spotify': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🍁", key: m.key } });
+        A17.sendMessage(from, { react: { text: "🎶", key: m.key } });
 
         if (!q) return reply(`Please provide a query. Example: ${prefix + command} 295`);
 
@@ -5335,7 +5335,7 @@ _Click the button below to download_`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
-        A17.sendMessage(from, { react: { text: "🙀", key: m.key } });
+        A17.sendMessage(from, { react: { text: "🙃", key: m.key } });
         reply(mess.waiting);
 
         let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json');
@@ -6825,7 +6825,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
 
 
   
-  *❘❘────Oᴡɴᴇʀ Cᴅᴍ────❘❘*
+  *❘❘────Oᴡɴᴇʀ Cᴏᴍᴍᴀɴᴅꜱ────❘❘*
 
   ⌯     ${prefix}join
   ⌯     ${prefix}self
@@ -6847,7 +6847,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
   ⌯     ${prefix}ban del
 
  
-  *❘❘────Gʀᴏᴜᴘ Mᴏᴅᴇ────❘❘*
+  *❘❘────Gʀᴏᴜᴘ Mᴏᴅᴇʀᴀᴛɪᴏɴ────❘❘*
 
 
   ⌯     ${prefix}add
@@ -6869,7 +6869,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
 
 
   
-  *❘❘────Dᴏᴡɴʟᴏᴀᴅ Cᴍᴅ────❘❘*
+  *❘❘────Dᴏᴡɴʟᴏᴀᴅ Cᴏᴍᴍᴀɴᴅꜱ────❘❘*
   
  
   ⌯     ${prefix}play
