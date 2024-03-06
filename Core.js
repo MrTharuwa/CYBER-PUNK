@@ -5062,7 +5062,7 @@ _Click the button below to download_`
       case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
           if (isBan) return reply(mess.banned);	 			
        if (isBanChat) return reply(mess.bangc);
-       A17.sendMessage(from, { react: { text: "🍁" , key: m.key }}) 
+       A17.sendMessage(from, { react: { text: "🎶" , key: m.key }}) 
        const YT=require('./lib/ytdlcore')
        const { isUrl, fetchBuffer } = require('./lib/Function')
       
@@ -5089,7 +5089,9 @@ _Click the button below to download_`
       
       🎐 *Channel :* ${anu.author.name}
       
-      🔗 *Url :* ${anu.url}`,
+      🔗 *Url :* ${anu.url}
+      
+   *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᵗᵐ*`,
          
        footer: `${global.BotName}`,
        buttons: buttons,
@@ -6636,7 +6638,7 @@ _Click the button below to download_`
   🌐 *URL: ${anime.url}*
   ❄ *Description:* ${anime.synopsis}*
   
-   ☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*`
+   *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᵗᵐ*`
         await A17.sendMessage(m.chat, { image: { url: anime.picture }, caption: animetxt }, { quoted: m })
       }
         break;
