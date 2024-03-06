@@ -5,14 +5,14 @@
 </p>
 
 <p align="center">
-   <a href="https://github.com/Kai0071">
+   <a href="https://github.com/MrTharuwa/">
     <img src="https://graph.org/file/14d7cc038fa3192a8fe43.jpg" width="249">
 </p>
 
-<h1 align="center"> A17 BoT (Beta)</h1>
+<h1 align="center"> 𝙲𝚢𝚋𝚎𝚛 𝙿𝚞𝙽𝚔 𝙱𝚘𝚃 (Beta)</h1>
 
 <p align="center"> 
-  Hi there, I'm "A17," a versatile WhatsApp bot created and reprogrammed by Kai to perform a wide array of functions based on WhatsApp Multi-Device (MD) Support.
+  Hi there, I'm "𝚌𝚢𝚋𝚎𝚛 𝚙𝚞𝚗𝚔," a versatile WhatsApp bot created and reprogrammed by  to perform a wide array of functions based on WhatsApp Multi-Device Support.
 
 <p align="center"> 
   <a href="https://github.com/Kai0071/A17/stargazers">
