@@ -6634,7 +6634,9 @@ _Click the button below to download_`
   💫 *Popularity: ${anime.popularity}*
   ♦️ *Trailer: ${anime.trailer}*
   🌐 *URL: ${anime.url}*
-  ❄ *Description:* ${anime.synopsis}*`
+  ❄ *Description:* ${anime.synopsis}*
+  
+   ☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*`
         await A17.sendMessage(m.chat, { image: { url: anime.picture }, caption: animetxt }, { quoted: m })
       }
         break;
@@ -7097,8 +7099,8 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
   ⌯   🔮 Then type *${prefix}nsfwmenu* for
   ⌯       all NSFW commands.
   ⌯    
-  ⌯   『  *${global.BotName}*  』
-  ⌯       Developed By: *Kai*
+  ⌯   🔮  *${global.BotName}*  』
+  ⌯       Developed By: *Tharuwa*
   ⌯    
   ⌯   🔮 To use any of these
   ⌯       commands type.
@@ -7111,7 +7113,8 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
   ⌯    
   ⌯   🔮 Type *${prefix}help* to get
   ⌯       full command list.
-  ┬│▸
+  ⌯
+  ┬│▸☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*
   ╰────────────···▸`
         let buttonMessage = {
           video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
@@ -7263,7 +7266,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* senpai! this command are not programmed! Type *${prefix}help* to get my full command list!`)
+          reply(`Hey *${pushname}* Dear! this command are not programmed! Type The *${prefix}menu* to get my full command list!`)
 
         }
 
