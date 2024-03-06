@@ -5109,7 +5109,7 @@ _Click the button below to download_`
       // case 'play': case 'song': case 'music': {
       //   if (isBan) return reply(mess.banned);	 			
       //   if (isBanChat) return reply(mess.bangc);
-      //   A17.sendMessage(from, { react: { text: "🍁" , key: m.key }}) 
+      //   A17.sendMessage(from, { react: { text: "🎶" , key: m.key }}) 
       //   const YT=require('./lib/ytdl-core')
       //   let yts = require("youtube-yts")
       //   let search = await yts(text)
@@ -5153,7 +5153,9 @@ _Click the button below to download_`
 
   🏮 *Video Uploaded:* ${anu.ago}
 
-  🔗 *Url :* ${anu.url}\n`,
+  🔗 *Url :* ${anu.url}\n
+ 
+ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᵗᵐ*`,
 
           },
           { quoted: m }
@@ -6823,7 +6825,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
 
 
   
-  *❘❘────Oᴡɴᴇʀ Cᴏᴍᴍᴀɴᴅꜱ────❘❘*
+  *❘❘────Oᴡɴᴇʀ Cᴅᴍ────❘❘*
 
   ⌯     ${prefix}join
   ⌯     ${prefix}self
@@ -6845,7 +6847,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
   ⌯     ${prefix}ban del
 
  
-  *❘❘────Gʀᴏᴜᴘ Mᴏᴅᴇʀᴀᴛɪᴏɴ────❘❘*
+  *❘❘────Gʀᴏᴜᴘ Mᴏᴅᴇ────❘❘*
 
 
   ⌯     ${prefix}add
@@ -6867,7 +6869,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
 
 
   
-  *❘❘────Dᴏᴡɴʟᴏᴀᴅ Cᴏᴍᴍᴀɴᴅꜱ────❘❘*
+  *❘❘────Dᴏᴡɴʟᴏᴀᴅ Cᴍᴅ────❘❘*
   
  
   ⌯     ${prefix}play
