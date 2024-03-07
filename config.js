@@ -21,15 +21,15 @@ global.prefa = ["."];                                    //Default prefix here. 
 
 
 //
-global.Owner = ["916297175943", "919362639362"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.OwnerNumber = ["916297175943", "919362639362"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
-global.ownertag = ["916297175943"];
-global.OwnerName = "Kai";
+global.Owner = ["94765832338", "94785635619"];         //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.OwnerNumber = ["94765832338", "94765832338"];   //If you want singal number so global.Owner = ['916297175943'] Change into your number.
+global.ownertag = ["94765832338"];
+global.OwnerName = "Tharuwa";
 global.BotName = "Cyber Punk";
-global.packname = "Cyber punkin ";                             //Do not change.
+global.packname = "Cyber punk";                             //Do not change.
 global.author = "By: Tharuwa";                               //Do not change.
 global.BotSourceCode = "https://github.com/Kai0071/A17"; //Do not change.
-global.SupportGroupLink = "https://chat.whatsapp.com/GhRGdwfaMVDCoeAdzILfl";
+global.SupportGroupLink = "https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3";
 
 
 //
@@ -80,11 +80,11 @@ global.ntilink = []
 //
 global.mess = {
   jobdone: 'Here you go...',
-  useradmin: 'Sorry, only *Group Admins* can use this command *Baka*!',
+  useradmin: 'Sorry, only *Group Admins* can use this command *fist admin*!',
   botadmin: 'Sorry, i cant execute this command without being an *Admin* of this group.',
-  botowner: 'Only my *Owner* can use this command, Baka!',
-  grouponly: 'This command is only made for *Groups*, Baka!',
-  privateonly: 'This command is only made for *Private Chat*, Baka!',
+  botowner: 'Only my *Owner* can use this command,',
+  grouponly: 'This command is only made for *Groups*,',
+  privateonly: 'This command is only made for *Private Chat*,!',
   botonly: 'Only the *Bot itself* can use this command!',
   waiting: 'Just Wait...',
   nolink: 'Please provide me *link*, Baka!',
