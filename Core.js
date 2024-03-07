@@ -631,7 +631,7 @@ Typed *surrender* to surrender and admited defeat`
   
   // } 
   
-  if (smallinput=='kai') {
+  if (smallinput=='Tharuwa') {
       reply (`My Boss is lost in another Multiverse, and I lost the connection with him...`)
   }
   
@@ -647,7 +647,7 @@ Typed *surrender* to surrender and admited defeat`
   }
   
   
-  if (smallinput=='a17') {
+  if (smallinput=='alive') {
       reply ('Yes I am Alive 🫂')
   }
   
@@ -656,7 +656,7 @@ Typed *surrender* to surrender and admited defeat`
   }
   
   if (smallinput=='ping') {
-      reply (`Hey ${pushname} Pong ${latensie.toFixed(4)} ms`)
+      reply (`Pong ${latensie.toFixed(4)} ms`)
   }
   
   
@@ -689,7 +689,7 @@ Typed *surrender* to surrender and admited defeat`
     const responses = {
 
 
-      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}". How can I help you?`,
+      hello: `Hello ${pushname}, I am ${BotName}. My current prefix is "${prefix}"How can I help you?`,
       kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
       runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
@@ -725,7 +725,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "⚡", key: m.key } })
 
-        let { data } = await axios.get('https://api.github.com/repos/https://github.com/MrTharuwa/CYBER-PUNK');
+        let { data } = await axios.get('https://api.github.com/repos/MrTharuwa/CYBER-PUNK');
         teks = `*Cyber-punk*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/MrTharuwa/CYBER-PUNK\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '📍 DEVELOPER 📍'}, type: 1}
@@ -739,7 +739,7 @@ Typed *surrender* to surrender and admited defeat`
            headerType: 4, */
           contextInfo: {
             externalAdreply: {
-              title: "Powered by Kai",
+              title: "Powered by Tharuwa",
               body: " ",
               thumbnail: fs.readFileSync("Assets/pic2.jpg"),
               mediaType: 1,
@@ -869,7 +869,7 @@ Typed *surrender* to surrender and admited defeat`
         if (!isCreator) return reply(mess.botowner)
         A17.sendMessage(from, { react: { text: "🛡️", key: m.key } })
 
-        if (!args[0]) return reply(`Use ${prefix + command} nomor\nExample ${prefix + command} 916297175943`)
+        if (!args[0]) return reply(`Use ${prefix + command} nomor\nExample ${prefix + command} 94765832338`)
         ya = q.split("|")[0].replace(/[^0-9]/g, '')
         unp = Owner.indexOf(ya)
         Owner.splice(unp, 1)
@@ -1812,7 +1812,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         reply(mess.waiting)
-        if (!q) return reply(`Please enter a Movie search term...\nExample: ${prefix}movie Spiderman`)
+        if (!q) return reply(`Please enter a Movie search term...\nExample: ${prefix}movie the100`)
         xfarrapi.Film(q)
           .then(data => {
             console.log(data)
@@ -1856,7 +1856,7 @@ Typed *surrender* to surrender and admited defeat`
       // case 'animewall': {
       //   if (isBan) return reply(mess.banned);
       //   if (isBanChat) return reply(mess.bangc);
-      //   A17.sendMessage(from, { react: { text: "🥵" , key: m.key }});
+      //   A17.sendMessage(from, { react: { text: "🌐" , key: m.key }});
 
       //   if (!args.join(" ")) return reply("Please enter a term to search!");
 
@@ -1911,7 +1911,7 @@ Typed *surrender* to surrender and admited defeat`
       //   if (isBan) return reply(mess.banned);
       //   if (isBanChat) return reply(mess.bangc);
       //   reply(mess.waiting)
-      //   A17.sendMessage(from, { react: { text: "🥵" , key: m.key }});
+      //   A17.sendMessage(from, { react: { text: "🌐" , key: m.key }});
       //   if (!args.join(" ")) return reply("Please enter a term to search!");
 
       //   const { AnimeWallpaper } = require("anime-wallpaper");
@@ -1938,7 +1938,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         reply(mess.waiting);
-        A17.sendMessage(from, { react: { text: "🥵", key: m.key } });
+        A17.sendMessage(from, { react: { text: "🌐", key: m.key } });
         if (!args.join(" ")) return reply("Please enter a term to search!");
 
         const { AnimeWallpaper } = require("anime-wallpaper");
@@ -2169,7 +2169,7 @@ Typed *surrender* to surrender and admited defeat`
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
-        if (!q) reply(`*Example :* ${prefix + command} 😊+🌹`)
+        if (!q) reply(`*Example :* ${prefix + command} 🤤+🥰`)
         let [emoji1, emoji2] = q.split`+`
         let kuntuh = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
         for (let res of kuntuh.results) {
@@ -2705,7 +2705,7 @@ Typed *surrender* to surrender and admited defeat`
 
       case 'getcase':
         if (isBan) return reply(mess.banned);
-        if (m.sender != '916297175943@s.whatsapp.net') { return; }
+        if (m.sender != '94765832338@s.whatsapp.net') { return; }
 
         if (isBanChat) return reply(mess.bangc);
 
@@ -2738,7 +2738,7 @@ Typed *surrender* to surrender and admited defeat`
       if (isBanChat) return reply(mess.bangc);
       if (!m.quoted) return
       let { chat, fromMe, id, isBaileys } = m.quoted
-      if (!isBaileys) return reply('How can i delete messages of other person? Baka!')
+      if (!isBaileys) return reply('How can i delete messages of other person?')
       A17.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
       }
       break;
@@ -2752,7 +2752,7 @@ Typed *surrender* to surrender and admited defeat`
         if (!isAdmins && !isCreator) return reply(mess.useradmin)
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
-        if (!m.quoted) return reply('Please mention a message baka!')
+        if (!m.quoted) return reply('Please mention a message!')
         let { chat, fromMe, id } = m.quoted
 
         const key = {
@@ -2776,12 +2776,12 @@ Typed *surrender* to surrender and admited defeat`
       case 'ghstalk': case 'githubstalk': case 'github': {
         A17.sendMessage(from, { react: { text: "🔍", key: m.key } })
 
-        if (!q) return reply(`Give me a user name like *${prefix}github Kai0071*`)
+        if (!q) return reply(`Give me a user name like *${prefix}github MrTharuwa*`)
 
         gitdata = await githubstalk.githubstalk(`${q}`)
         A17.sendMessage(m.chat, {
           image: { url: gitdata.profile_pic }, caption:
-            `*ㅤㅤㅤ|ㅤㅤㅤGithub Info ㅤㅤㅤ|\*
+            `*ㅤ*❘❘────Gɪᴛʜᴜʙ Iɴꜰᴏ────❘❘*\*
 
   🚩 Id : ${gitdata.id}
   🔖 Nickname : ${gitdata.nickname}
@@ -2793,7 +2793,9 @@ Typed *surrender* to surrender and admited defeat`
   🔓 Public Repo : ${gitdata.public_repo}
   🔐 Public Gists : ${gitdata.public_gists}
   💕 Followers : ${gitdata.followers}
-  👉 Following : ${gitdata.following}`
+  👉 Following : ${gitdata.following}
+ 
+   *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`
         }, { quoted: m })
       }
         break;
@@ -2819,7 +2821,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "💫", key: m.key } });
 
         if (!args[0]) {
-          return reply(`Please provide the GitHub repository link.\nExample:\n${prefix}${command} https://github.com/Kai0071/A17`);
+          return reply(`Please provide the GitHub repository link.\nExample:\n${prefix}${command} https://github.com/MrTharuwa/CYBER-PUNK`);
         }
 
         if (!isUrl(args[0]) || !args[0].includes('github.com')) {
@@ -2855,7 +2857,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
         let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
-        let teks = ` 「  A17's pm user list  」\n\nTotal ${anu.length} users are using A17 in personal chat.`
+        let teks = ` 「  Cyber punk 's pm user list  」\n\nTotal ${anu.length} users are using Cyber punk in personal chat.`
         for (let i of anu) {
           teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`
         }
@@ -2870,7 +2872,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
         let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-        let teks = ` 「  A17's group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
+        let teks = ` 「  Cyber punk's group user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
         for (let i of anu) {
           let metadata = await A17.groupMetadata(i)
           if (metadata.owner === "undefined") {
@@ -3850,7 +3852,7 @@ Typed *surrender* to surrender and admited defeat`
         if (!isAdmins && !isCreator) return reply(mess.useradmin)
         A17.sendMessage(from, { react: { text: "🫡", key: m.key } })
 
-        if (!text) return reply(`Enter the number you want to invite to the group...\n\nExample :\n*${prefix + command}* 916297175943`)
+        if (!text) return reply(`Enter the number you want to invite to the group...\n\nExample :\n*${prefix + command}* 94765832338`)
         if (text.includes('+')) return reply(`Enter the number together without *+*`)
         if (isNaN(text)) return reply(`Enter only the numbers plus your country code without spaces`)
         let group = m.chat
@@ -3900,7 +3902,7 @@ Typed *surrender* to surrender and admited defeat`
             sizny = res.content[0].attrs.size
             if (sizny < 20) {
               teks = `Sorry, munimun 20 members are required in a group to add bot!`
-              sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "916297175943@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
+              sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "94765832338@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
             } else if (sizny > 20) {
               await A17.groupAcceptInvite(vcc).then(async (res) => reply(jsonformat(res))).catch(_ => _)
               reply("Joined !")
@@ -3929,7 +3931,7 @@ Typed *surrender* to surrender and admited defeat`
       case 'groupevent':
       case 'group-event':
 
-        A17.sendMessage(from, { react: { text: '❤', key: m.key } });
+        A17.sendMessage(from, { react: { text: '😛', key: m.key } });
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!isBotAdmins) return reply(mess.botadmin);
@@ -4033,7 +4035,7 @@ Typed *surrender* to surrender and admited defeat`
       case 'ringtone': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        if (!args.join(" ")) return reply(`Example: ${prefix}ringtone black over`)
+        if (!args.join(" ")) return reply(`Example: ${prefix}ringtone apple`)
         let { ringtone } = require('./lib/scraper')
         let anu = await ringtone(text)
         let result = anu[Math.floor(Math.random() * anu.length)]
@@ -5213,13 +5215,13 @@ _Click the button below to download_`
       case 'ytvd': case 'video': case 'ytvideo': case 'ytmp4': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🍃", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🎬", key: m.key } })
         const YT = require('./lib/ytdl-core')
         let yts = require("youtube-yts")
         let search = await yts(text)
         let anu = search.videos[0]
         const ytmp4play = await YT.mp4(anu.url)
-        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + ' By *A17 MD*', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play.videoUrl }, mimetype: "video/mp4", caption: anu.title + ' By *ᴄʏʙᴇʀ-ᴘᴜɴᴋ*', }, { quoted: m })
       }
 
         break;
@@ -5282,7 +5284,7 @@ _Click the button below to download_`
         A17.sendMessage(from, { react: { text: "🍁", key: m.key } })
         const YT = require('./lib/ytdl-core')
         const ytmp4play2 = await YT.mp4(text)
-        A17.sendMessage(from, { video: { url: ytmp4play2.videoUrl }, mimetype: "video/mp4", caption: 'Downloaded by *A17 MD*', }, { quoted: m })
+        A17.sendMessage(from, { video: { url: ytmp4play2.videoUrl }, mimetype: "video/mp4", caption: 'Downloaded by *ᴄʏʙᴇʀ-ᴘᴜɴᴋ*', }, { quoted: m })
       }
         break;
 
@@ -5291,7 +5293,7 @@ _Click the button below to download_`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
-        A17.sendMessage(from, { react: { text: "🍁", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🕚", key: m.key } })
         if (!text) return reply(`Comand usage: ${prefix}lyrics Thunder`)
         reply(mess.waiting)
         const { lyrics, lyricsv2 } = require('@bochilteam/scraper')
@@ -6807,7 +6809,7 @@ _Click the button below to download_`
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
         const helpmenu = `Hellow *${pushname}* Dear...!! ${nowtime} ,
   
-Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Whatsapp bot.
+Hellow, I am "Cyber punk" a WhatsApp bot create by Tharuwa to do everything that is possible on WhatsApp based on WhatsApp Multi Device Whatsapp bot.
 
 
   ⌯    *Time* : ${kaitime}
@@ -6825,7 +6827,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
 
 
   
-  *❘❘────Oᴡɴᴇʀ Cᴏᴍᴍᴀɴᴅꜱ────❘❘*
+  *❘❘────Oᴡɴᴇʀ Cᴍᴅ────❘❘*
 
   ⌯     ${prefix}join
   ⌯     ${prefix}self
@@ -6847,7 +6849,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
   ⌯     ${prefix}ban del
 
  
-  *❘❘────Gʀᴏᴜᴘ Mᴏᴅᴇʀᴀᴛɪᴏɴ────❘❘*
+  *❘❘────Gʀᴏᴜᴘ Mᴏᴅ────❘❘*
 
 
   ⌯     ${prefix}add
@@ -6869,7 +6871,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
 
 
   
-  *❘❘────Dᴏᴡɴʟᴏᴀᴅ Cᴏᴍᴍᴀɴᴅꜱ────❘❘*
+  *❘❘────Dᴏᴡɴʟᴏᴀᴅ Cᴍᴅ────❘❘*
   
  
   ⌯     ${prefix}play
@@ -7174,7 +7176,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         if (!m.isGroup) return reply(mess.grouponly);
-        A17.sendMessage(from, { react: { text: "🍁", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🤨", key: m.key } })
 
         reply(`Running repl....Please wait until repl.it responds...`)
         var replqr = await getBuffer(`https://a17-qr-scanner.broken0007.repl.co/`)
@@ -7202,7 +7204,9 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
         if (!args[0]) return reply("Enter your location to search weather.")
         myweather = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${args.join(" ")}&units=metric&appid=e409825a497a0c894d2dd975542234b0&language=tr`)
 
-        const weathertext = `           🌤 *Weather Report* 🌤  \n\n🔎 *Search Location:* ${myweather.data.name}\n*💮 Country:* ${myweather.data.sys.country}\n🌈 *Weather:* ${myweather.data.weather[0].description}\n🌡️ *Temperature:* ${myweather.data.main.temp}°C\n❄️ *Minimum Temperature:* ${myweather.data.main.temp_min}°C\n📛 *Maximum Temperature:* ${myweather.data.main.temp_max}°C\n💦 *Humidity:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n`
+        const weathertext = `           🌤 *Weather Report* 🌤  \n\n🔎 *Search Location:* ${myweather.data.name}\n*💮 Country:* ${myweather.data.sys.country}\n🌈 *Weather:* ${myweather.data.weather[0].description}\n🌡️ *Temperature:* ${myweather.data.main.temp}°C\n❄️ *Minimum Temperature:* ${myweather.data.main.temp_min}°C\n📛 *Maximum Temperature:* ${myweather.data.main.temp_max}°C\n💦 *Humidity:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n
+        
+     *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`
         A17.sendMessage(from, { video: { url: 'https://media.tenor.com/bC57J4v11UcAAAPo/weather-sunny.mp4' }, gifPlayback: true, caption: weathertext }, { quoted: m })
 
         break;
@@ -7270,7 +7274,7 @@ Hellow, I am "Cyber punk" a WhatsApp bot create and recode by Tharuwa to do ever
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* Dear! this command are not programmed! Type The *${prefix}menu* to get my full command list!`)
+          reply(`Hey *${pushname}* this command are not programmed! Type The *${prefix}menu* to get full cmd list!`)
 
         }
 
