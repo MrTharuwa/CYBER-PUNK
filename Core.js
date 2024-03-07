@@ -6808,7 +6808,6 @@ _Click the button below to download_`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-        const helpmenu = `fs.readFileSync(`./Assets/audio/Alive.mp3`)
         const helpmenu = `Hellow *${pushname}* Dear...!! ${nowtime} ,
   
 *Hellow, I am "Cyber punk" Multi Device Whatsapp bot create by tharuwa*
@@ -7120,7 +7119,7 @@ _Click the button below to download_`
   ┬│▸☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*
   ╰────────────···▸`
         let buttonMessage = {
-          video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
+          audio: fs.readFileSync('./asset/audio/Alive.mp3'), gifPlayback: true,
           caption: helpmenu,
 
           headerType: 4
