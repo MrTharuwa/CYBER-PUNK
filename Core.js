@@ -647,7 +647,7 @@ Typed *surrender* to surrender and admited defeat`
   }
   
   
-  if (smallinput=='${prefix}alive') {
+  if (smallinput=='.menu') {
       reply ('Yes I am Alive 🫂')
   }
   
@@ -700,7 +700,7 @@ Typed *surrender* to surrender and admited defeat`
       'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       ga: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
-       alive: `fs.readFileSync(`./Assets/audio/Alive.mp3)`,
+       .menu `Yes i am alive now ${pushname} ☺️.ටෙස්ට් එකක්`,
       
     };
 
