@@ -700,7 +700,8 @@ Typed *surrender* to surrender and admited defeat`
       'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       ga: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
-
+       alive: `Yes i am alive now ${pushname} ☺️.ටෙස්ට් එකක්`,
+      
     };
 
     const smallinput = budy.toLowerCase();
