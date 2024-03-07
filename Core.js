@@ -631,7 +631,7 @@ Typed *surrender* to surrender and admited defeat`
   
   // } 
   
-  if (smallinput=='Tharuwa') {
+  if (smallinput=='MrTharuwa') {
       reply (`My Boss is lost in another Multiverse, and I lost the connection with him...`)
   }
   
@@ -651,8 +651,8 @@ Typed *surrender* to surrender and admited defeat`
       reply ('Yes I am Alive 🫂')
   }
   
-  if (smallinput=='sasha') {
-    reply ('Only you...🫶🏻')
+  if (smallinput=='Tharuwa') {
+    reply ('Cyber-punk-md-bot-creator')
   }
   
   if (smallinput=='ping') {
@@ -660,11 +660,11 @@ Typed *surrender* to surrender and admited defeat`
   }
   
   
-  if (smallinput.includes('good morning') || smallinput.includes('ohayo')) {
+  if (smallinput.includes('good morning') || smallinput.includes('gm')) {
     reply (`Good morning to you too ${pushname} ☺️. Have a great day 😇.`);
   }
   
-  if (smallinput.includes('good afternoon') || smallinput.includes('konnichiwa')) {
+  if (smallinput.includes('good afternoon') || smallinput.includes('ga')) {
   
     reply (`Good afthernoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`);
   
@@ -693,12 +693,12 @@ Typed *surrender* to surrender and admited defeat`
       kai: `My Boss is lost in another Multiverse, and I lost connection with him...`,
       runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
-      sasha: 'Only you...🫶🏻',
-      ping: `Hey ${pushname}, Pong ${latensie.toFixed(4)} ms`,
+      Tharuwa: 'Cyber-punk-md-bot-creator',
+      ping: `*Pong ${latensie.toFixed(4)} ms*`,
       'good morning': `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
-      ohayo: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
+      gm: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
       'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
-      konnichiwa: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
+      ga: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
 
     };
@@ -745,8 +745,8 @@ Typed *surrender* to surrender and admited defeat`
               mediaType: 1,
               //mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
               //sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
-              mediaUrl: 'github.com/Kai0071/A17',
-              sourceUrl: "github.com/Kai0071/A17"
+              mediaUrl: 'github.com/MrTharuwa/CYBER-PUNK',
+              sourceUrl: "github.com/MrTharuwa/CYBER-PUNK"
             }
           }
 
@@ -6809,317 +6809,312 @@ _Click the button below to download_`
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
         const helpmenu = `Hellow *${pushname}* Dear...!! ${nowtime} ,
   
-Hellow, I am "Cyber punk" a WhatsApp bot create by Tharuwa to do everything that is possible on WhatsApp based on WhatsApp Multi Device Whatsapp bot.
-
-
-  ⌯    *Time* : ${kaitime}
-  ⌯    *Date* : ${kaidate}
-  ☆⦁──────────────⦁☆
+*Hellow, I am "Cyber punk" Multi Device Whatsapp bot create by tharuwa*
 
   *❘❘────Bᴏᴛ Iɴꜰᴏ────❘❘*
 
-
-  ⌯    *Bot usr name :* ${pushname} 
-  ⌯    *My prefix is :*  ${prefix}
-  ⌯    *Owner name :* ${global.OwnerName} 
-  ⌯    *Bot runtime :* ${runtime(process.uptime())} 
-  ⌯    *Platform :* Linux
-
+  ༆    *Time* : ${kaitime}
+  ༆    *Date* : ${kaidate}
+  ༆    *Bot usr name :* ${pushname} 
+  ༆    *My prefix is :*  ${prefix}
+  ༆    *Owner name :* ${global.OwnerName} 
+  ༆    *Bot runtime :* ${runtime(process.uptime())} 
+  ༆    *Platform :* Linux
 
   
   *❘❘────Oᴡɴᴇʀ Cᴍᴅ────❘❘*
 
-  ⌯     ${prefix}join
-  ⌯     ${prefix}self
-  ⌯     ${prefix}public
-  ⌯     ${prefix}restart
-  ⌯     ${prefix}sleep
-  ⌯     ${prefix}setbotpp
-  ⌯     ${prefix}post
-  ⌯     ${prefix}listonline
-  ⌯     ${prefix}listgc
-  ⌯     ${prefix}listpc
-  ⌯     ${prefix}getcase
-  ⌯     ${prefix}bangroup
-  ⌯     ${prefix}broadcast
-  ⌯     ${prefix}bye
-  ⌯     ${prefix}block
-  ⌯     ${prefix}unblock
-  ⌯     ${prefix}ban add
-  ⌯     ${prefix}ban del
+  ༆     ${prefix}join
+  ༆     ${prefix}self
+  ༆     ${prefix}public
+  ༆     ${prefix}restart
+  ༆     ${prefix}sleep
+  ༆     ${prefix}setbotpp
+  ༆     ${prefix}post
+  ༆     ${prefix}listonline
+  ༆     ${prefix}listgc
+  ༆     ${prefix}listpc
+  ༆     ${prefix}getcase
+  ༆     ${prefix}bangroup
+  ༆     ${prefix}broadcast
+  ༆     ${prefix}bye
+  ༆     ${prefix}block
+  ༆     ${prefix}unblock
+  ༆     ${prefix}ban add
+  ༆     ${prefix}ban del
 
  
   *❘❘────Gʀᴏᴜᴘ Mᴏᴅ────❘❘*
 
 
-  ⌯     ${prefix}add
-  ⌯     ${prefix}invite
-  ⌯     ${prefix}remove
-  ⌯     ${prefix}promote
-  ⌯     ${prefix}demote
-  ⌯     ${prefix}grouplink
-  ⌯     ${prefix}group-event
-  ⌯     ${prefix}groupsetting
-  ⌯     ${prefix}setname
-  ⌯     ${prefix}setgcpp
-  ⌯     ${prefix}setdesc
-  ⌯     ${prefix}revoke
-  ⌯     ${prefix}tagall
-  ⌯     ${prefix}hidetag
-  ⌯     ${prefix}nsfw
-  ⌯     ${prefix}nsnfwmenu
+  ༆     ${prefix}add
+  ༆     ${prefix}invite
+  ༆     ${prefix}remove
+  ༆     ${prefix}promote
+  ༆     ${prefix}demote
+  ༆     ${prefix}grouplink
+  ༆     ${prefix}group-event
+  ༆     ${prefix}groupsetting
+  ༆     ${prefix}setname
+  ༆     ${prefix}setgcpp
+  ༆     ${prefix}setdesc
+  ༆     ${prefix}revoke
+  ༆     ${prefix}tagall
+  ༆     ${prefix}hidetag
+  ༆     ${prefix}nsfw
+  ༆     ${prefix}nsnfwmenu
 
 
   
   *❘❘────Dᴏᴡɴʟᴏᴀᴅ Cᴍᴅ────❘❘*
   
  
-  ⌯     ${prefix}play
-  ⌯     ${prefix}song
-  ⌯     ${prefix}video
-  ⌯     ${prefix}ytmp3
-  ⌯     ${prefix}ytmp4 
-  ⌯     ${prefix}yts
-  ⌯     ${prefix}lyrics
-  ⌯     ${prefix}movie
-  ⌯     ${prefix}google
-  ⌯     ${prefix}gimage
-  ⌯     ${prefix}pinterest
-  ⌯     ${prefix}wallpaper
-  ⌯     ${prefix}image
-  ⌯     ${prefix}searchgc
-  ⌯     ${prefix}wikimedia
-  ⌯     ${prefix}ytvideo
-  ⌯     ${prefix}mediafire
-  ⌯     ${prefix}instagram
-  ⌯     ${prefix}igtv
-  ⌯     ${prefix}facebook
-  ⌯     ${prefix}fbmp3
-  ⌯     ${prefix}twitter
-  ⌯     ${prefix}twittermp3
-  ⌯     ${prefix}tiktok
-  ⌯     ${prefix}tiktokaudio
-  ⌯     ${prefix}happymod
-  ⌯     ${prefix}tiktoknowm
+  ༆     ${prefix}play
+  ༆     ${prefix}song
+  ༆     ${prefix}video
+  ༆     ${prefix}ytmp3
+  ༆     ${prefix}ytmp4 
+  ༆     ${prefix}yts
+  ༆     ${prefix}lyrics
+  ༆     ${prefix}movie
+  ༆     ${prefix}google
+  ༆     ${prefix}gimage
+  ༆     ${prefix}pinterest
+  ༆     ${prefix}wallpaper
+  ༆     ${prefix}image
+  ༆     ${prefix}searchgc
+  ༆     ${prefix}wikimedia
+  ༆     ${prefix}ytvideo
+  ༆     ${prefix}mediafire
+  ༆     ${prefix}instagram
+  ༆     ${prefix}igtv
+  ༆     ${prefix}facebook
+  ༆     ${prefix}fbmp3
+  ༆     ${prefix}twitter
+  ༆     ${prefix}twittermp3
+  ༆     ${prefix}tiktok
+  ༆     ${prefix}tiktokaudio
+  ༆     ${prefix}happymod
+  ༆     ${prefix}tiktoknowm
 
 
   *❘❘────🔮Gᴀᴍᴇꜱ🔮────❘❘*
 
 
-  ⌯     ${prefix}ttt / tictactoe
-  ⌯     ${prefix}truth
-  ⌯     ${prefix}dare
-  ⌯     ${prefix}spin / slot
-  ⌯     ${prefix}gamble / lottery
+  ༆     ${prefix}ttt / tictactoe
+  ༆     ${prefix}truth
+  ༆     ${prefix}dare
+  ༆     ${prefix}spin / slot
+  ༆     ${prefix}gamble / lottery
  
 
   *❘❘────Cᴏɴᴠᴇʀᴛ────❘❘*
  
 
-  ⌯     ${prefix}sticker
-  ⌯     ${prefix}toimg
-  ⌯     ${prefix}tovideo
-  ⌯     ${prefix}togif
-  ⌯     ${prefix}tourl
-  ⌯     ${prefix}tomp3
-  ⌯     ${prefix}toaudio
-  ⌯     ${prefix}steal
-  ⌯     ${prefix}stickermeme
-  ⌯     ${prefix}emojimix
+  ༆     ${prefix}sticker
+  ༆     ${prefix}toimg
+  ༆     ${prefix}tovideo
+  ༆     ${prefix}togif
+  ༆     ${prefix}tourl
+  ༆     ${prefix}tomp3
+  ༆     ${prefix}toaudio
+  ༆     ${prefix}steal
+  ༆     ${prefix}stickermeme
+  ༆     ${prefix}emojimix
 
 
   *❘❘────Sᴏᴜɴᴅ Eᴅɪᴛ────❘❘*
 
 
-  ⌯     ${prefix}ringtone
-  ⌯     ${prefix}bass
-  ⌯     ${prefix}tempo
-  ⌯     ${prefix}blown
-  ⌯     ${prefix}robot
-  ⌯     ${prefix}slow
-  ⌯     ${prefix}squirrel
-  ⌯     ${prefix}deep
-  ⌯     ${prefix}earrape
-  ⌯     ${prefix}fast
-  ⌯     ${prefix}fat
-  ⌯     ${prefix}nightcore
-  ⌯     ${prefix}reverse
+  ༆     ${prefix}ringtone
+  ༆     ${prefix}bass
+  ༆     ${prefix}tempo
+  ༆     ${prefix}blown
+  ༆     ${prefix}robot
+  ༆     ${prefix}slow
+  ༆     ${prefix}squirrel
+  ༆     ${prefix}deep
+  ༆     ${prefix}earrape
+  ༆     ${prefix}fast
+  ༆     ${prefix}fat
+  ༆     ${prefix}nightcore
+  ༆     ${prefix}reverse
 
 
   *❘❘────🦄Rᴇᴀᴄᴛɪᴏɴꜱ🦄────❘❘*
  
 
-  ⌯     ${prefix}cuddle
-  ⌯     ${prefix}hug
-  ⌯     ${prefix}kiss
-  ⌯     ${prefix}bonk
-  ⌯     ${prefix}cry
-  ⌯     ${prefix}bully
-  ⌯     ${prefix}slap
-  ⌯     ${prefix}kill
-  ⌯     ${prefix}happy
-  ⌯     ${prefix}lick
-  ⌯     ${prefix}pat
-  ⌯     ${prefix}smug
-  ⌯     ${prefix}nom
-  ⌯     ${prefix}glomp
-  ⌯     ${prefix}bite
-  ⌯     ${prefix}yeet
-  ⌯     ${prefix}blush
-  ⌯     ${prefix}smile
-  ⌯     ${prefix}wave
-  ⌯     ${prefix}highfive
-  ⌯     ${prefix}handhold
-  ⌯     ${prefix}poke
-  ⌯     ${prefix}wink
-  ⌯     ${prefix}dance
-  ⌯     ${prefix}cringe
+  ༆     ${prefix}cuddle
+  ༆     ${prefix}hug
+  ༆     ${prefix}kiss
+  ༆     ${prefix}bonk
+  ༆     ${prefix}cry
+  ༆     ${prefix}bully
+  ༆     ${prefix}slap
+  ༆     ${prefix}kill
+  ༆     ${prefix}happy
+  ༆     ${prefix}lick
+  ༆     ${prefix}pat
+  ༆     ${prefix}smug
+  ༆     ${prefix}nom
+  ༆     ${prefix}glomp
+  ༆     ${prefix}bite
+  ༆     ${prefix}yeet
+  ༆     ${prefix}blush
+  ༆     ${prefix}smile
+  ༆     ${prefix}wave
+  ༆     ${prefix}highfive
+  ༆     ${prefix}handhold
+  ༆     ${prefix}poke
+  ༆     ${prefix}wink
+  ༆     ${prefix}dance
+  ༆     ${prefix}cringe
 
 
  
   *❘❘────😏Fᴜɴ😏────❘❘*
   
 
-  ⌯     ${prefix}reaction
-  ⌯     ${prefix}cutecheck
-  ⌯     ${prefix}couple
-  ⌯     ${prefix}soulmate
-  ⌯     ${prefix}handsomecheck
-  ⌯     ${prefix}beautifulcheck
-  ⌯     ${prefix}awesomecheck
-  ⌯     ${prefix}greatcheck
-  ⌯     ${prefix}gaycheck
-  ⌯     ${prefix}uglycheck
-  ⌯     ${prefix}charactercheck
-  ⌯     ${prefix}lesbiancheck
-  ⌯     ${prefix}hornychec
-  ⌯     ${prefix}prettycheck
-  ⌯     ${prefix}lovelycheck
+  ༆     ${prefix}reaction
+  ༆     ${prefix}cutecheck
+  ༆     ${prefix}couple
+  ༆     ${prefix}soulmate
+  ༆     ${prefix}handsomecheck
+  ༆     ${prefix}beautifulcheck
+  ༆     ${prefix}awesomecheck
+  ༆     ${prefix}greatcheck
+  ༆     ${prefix}gaycheck
+  ༆     ${prefix}uglycheck
+  ༆     ${prefix}charactercheck
+  ༆     ${prefix}lesbiancheck
+  ༆     ${prefix}hornychec
+  ༆     ${prefix}prettycheck
+  ༆     ${prefix}lovelycheck
 
 
   *❘❘────☀Wᴇᴇʙ☀────❘❘*
 
   
-  ⌯     ${prefix}anime
-  ⌯     ${prefix}animestory
-  ⌯     ${prefix}awoo
-  ⌯     ${prefix}manga
-  ⌯     ${prefix}animewall
-  ⌯     ${prefix}animewallpaper2
-  ⌯     ${prefix}crosplay
-  ⌯     ${prefix}animenom
-  ⌯     ${prefix}feed
-  ⌯     ${prefix}foxgirl
-  ⌯     ${prefix}waifu
-  ⌯     ${prefix}waifu2
-  ⌯     ${prefix}waifu3
-  ⌯     ${prefix}loli
-  ⌯     ${prefix}coffee
-  ⌯     ${prefix}tickle
-  ⌯     ${prefix}meow
-  ⌯     ${prefix}neko
-  ⌯     ${prefix}neko2
-  ⌯     ${prefix}migumin
-  ⌯     ${prefix}wallpaper
-  ⌯     ${prefix}animequote
+  ༆     ${prefix}anime
+  ༆     ${prefix}animestory
+  ༆     ${prefix}awoo
+  ༆     ${prefix}manga
+  ༆     ${prefix}animewall
+  ༆     ${prefix}animewallpaper2
+  ༆     ${prefix}crosplay
+  ༆     ${prefix}animenom
+  ༆     ${prefix}feed
+  ༆     ${prefix}foxgirl
+  ༆     ${prefix}waifu
+  ༆     ${prefix}waifu2
+  ༆     ${prefix}waifu3
+  ༆     ${prefix}loli
+  ༆     ${prefix}coffee
+  ༆     ${prefix}tickle
+  ༆     ${prefix}meow
+  ༆     ${prefix}neko
+  ༆     ${prefix}neko2
+  ༆     ${prefix}migumin
+  ༆     ${prefix}wallpaper
+  ༆     ${prefix}animequote
  
 
   *❘❘────Iɴꜰᴏʀᴍᴀᴛɪᴠᴇ────❘❘*
   
 
-  ⌯     ${prefix}quote
-  ⌯     ${prefix}weather
-  ⌯     ${prefix}covid
-  ⌯     ${prefix}earthquake
-  ⌯     ${prefix}wiki
-  ⌯     ${prefix}stalknumber
+  ༆     ${prefix}quote
+  ༆     ${prefix}weather
+  ༆     ${prefix}covid
+  ༆     ${prefix}earthquake
+  ༆     ${prefix}wiki
+  ༆     ${prefix}stalknumber
 
 
   *❘❘────Eꜱꜱᴇɴᴛɪᴀʟꜱ────❘❘*
  
   
-  ⌯     ${prefix}qr
-  ⌯     ${prefix}say
-  ⌯     ${prefix}fliptext
-  ⌯     ${prefix}toletter
-  ⌯     ${prefix}translate, 
+  ༆     ${prefix}qr
+  ༆     ${prefix}say
+  ༆     ${prefix}fliptext
+  ༆     ${prefix}toletter
+  ༆     ${prefix}translate, 
   
  
   *❘❘────🌀 Oᴛʜᴇʀꜱ 🌀────❘❘*
 
 
-  ⌯     ${prefix}stickermeme
-  ⌯     ${prefix}quotes
-  ⌯     ${prefix}report
-  ⌯     ${prefix}afk
-  ⌯     ${prefix}darkjoke
+  ༆     ${prefix}stickermeme
+  ༆     ${prefix}quotes
+  ༆     ${prefix}report
+  ༆     ${prefix}afk
+  ༆     ${prefix}darkjoke
   
  
   *❘❘────💰Eᴄᴏɴᴏᴍʏ💰────❘❘*
 
 
-  ⌯     ${prefix}daily 
-  ⌯     ${prefix}wallet
-  ⌯     ${prefix}bank
-  ⌯     ${prefix}bankupgrade
-  ⌯     ${prefix}deposit
-  ⌯     ${prefix}withdraw 
-  ⌯     ${prefix}rob / attack
-  ⌯     ${prefix}transfer / give
-  ⌯     ${prefix}wealth / ritual
+  ༆     ${prefix}daily 
+  ༆     ${prefix}wallet
+  ༆     ${prefix}bank
+  ༆     ${prefix}bankupgrade
+  ༆     ${prefix}deposit
+  ༆     ${prefix}withdraw 
+  ༆     ${prefix}rob / attack
+  ༆     ${prefix}transfer / give
+  ༆     ${prefix}wealth / ritual
 
 
   *❘❘────❗Aɴᴛɪ Lɪɴᴋ ❗────❘❘*
 
   
-  ⌯     ${prefix}antilinkgc
-  ⌯     ${prefix}antilinktt
-  ⌯     ${prefix}antilinkytch
-  ⌯     ${prefix}antilinkytch
-  ⌯     ${prefix}antilinkig
-  ⌯     ${prefix}antilinkfb
-  ⌯     ${prefix}antilinktwit
-  ⌯     ${prefix}antiwame
-  ⌯     ${prefix}antilinkall
+  ༆     ${prefix}antilinkgc
+  ༆     ${prefix}antilinktt
+  ༆     ${prefix}antilinkytch
+  ༆     ${prefix}antilinkytch
+  ༆     ${prefix}antilinkig
+  ༆     ${prefix}antilinkfb
+  ༆     ${prefix}antilinktwit
+  ༆     ${prefix}antiwame
+  ༆     ${prefix}antilinkall
   
   *❘❘────Cᴏʀᴇ────❘❘*
   
   
-  ⌯     ${prefix}repo
-  ⌯     ${prefix}script
-  ⌯     ${prefix}speak
-  ⌯     ${prefix}support
-  ⌯     ${prefix}stalk
-  ⌯     ${prefix}setprefix
-  ⌯     ${prefix}auto-status
-  ⌯     ${prefix}auto-typing
-  ⌯     ${prefix}auto-recoding
+  ༆     ${prefix}repo
+  ༆     ${prefix}script
+  ༆     ${prefix}speak
+  ༆     ${prefix}support
+  ༆     ${prefix}stalk
+  ༆     ${prefix}setprefix
+  ༆     ${prefix}auto-status
+  ༆     ${prefix}auto-typing
+  ༆     ${prefix}auto-recoding
   
   
   〢━━━ ⚠️ *NSFW* ⚠️ ━━━〢
  
  
-  ⌯   🔮 Type *${prefix}nsfw* then enable 
-  ⌯       NSFW (Admin only!)
-  ⌯    
-  ⌯   🔮 Then type *${prefix}nsfwmenu* for
-  ⌯       all NSFW commands.
-  ⌯    
-  ⌯   🔮  *${global.BotName}*  』
-  ⌯       Developed By: *Tharuwa*
-  ⌯    
-  ⌯   🔮 To use any of these
-  ⌯       commands type.
-  ⌯    
-  ⌯   *${prefix}<Command name>*.
-  ⌯    
-  ⌯   🔮 To get Support Group link
-  ⌯     type *${prefix}support*.
-  ⌯    
-  ⌯    
-  ⌯   🔮 Type *${prefix}help* to get
-  ⌯       full command list.
-  ⌯
+  ༆   🔮 Type *${prefix}nsfw* then enable 
+  ༆       NSFW (Admin only!)
+  ༆    
+  ༆   🔮 Then type *${prefix}nsfwmenu* for
+  ༆       all NSFW commands.
+  ༆    
+  ༆   🔮  *${global.BotName}*  』
+  ༆       Developed By: *Tharuwa*
+  ༆    
+  ༆   🔮 To use any of these
+  ༆       commands type.
+  ༆    
+  ༆   *${prefix}<Command name>*.
+  ༆    
+  ༆   🔮 To get Support Group link
+  ༆     type *${prefix}support*.
+  ༆    
+  ༆    
+  ༆   🔮 Type *${prefix}help* to get
+  ༆       full command list.
+  ༆
   ┬│▸☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*
   ╰────────────···▸`
         let buttonMessage = {
