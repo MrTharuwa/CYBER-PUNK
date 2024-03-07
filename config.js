@@ -28,7 +28,7 @@ global.OwnerName = "Tharuwa";
 global.BotName = "Cyber Punk";
 global.packname = "Cyber punk";                             //Do not change.
 global.author = "By: Tharuwa";                               //Do not change.
-global.BotSourceCode = "https://github.com/Kai0071/A17"; //Do not change.
+global.BotSourceCode = "https://github.com/MrTharuwa/CYBER-PUNK"; //Do not change.
 global.SupportGroupLink = "https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3";
 
 
@@ -42,7 +42,7 @@ global.openAiAPI = "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";
 
 //
 global.location = "Tata City, India";
-global.reactmoji = "❤️";
+global.reactmoji = "🤍";
 global.themeemoji = "💖";
 global.vidmenu = { url: 'https://media.tenor.com/Jdu0Ov8X2sIAAAAC/A17-Bot.mp4' };
 global.websitex = "https://github.com/Kai0071";
