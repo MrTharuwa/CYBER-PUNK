@@ -28,7 +28,7 @@ global.OwnerName = "Tharuwa";
 global.BotName = "Cyber Punk";
 global.packname = "Cyber punk";                             //Do not change.
 global.author = "By: Tharuwa";                               //Do not change.
-global.BotSourceCode = "https://github.com/MrTharuwa/CYBER-PUNK"; //Do not change.
+global.BotSourceCode = "https://github.com/Kai0071/A17"; //Do not change.
 global.SupportGroupLink = "https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3";
 
 
