@@ -7119,7 +7119,7 @@ _Click the button below to download_`
   ┬│▸☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*
   ╰────────────···▸`
         let buttonMessage = {
-          audio: fs.readFileSync('./asset/audio/Alive.mp3'), gifPlayback: true,
+          video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
           caption: helpmenu,
 
           headerType: 4
