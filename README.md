@@ -15,7 +15,7 @@
   Hi there, I'm "𝚌𝚢𝚋𝚎𝚛 𝚙𝚞𝚗𝚔," a versatile WhatsApp bot created and reprogrammed by  to perform a wide array of functions based on WhatsApp Multi-Device Support.
 
 <p align="center"> 
-  <a href="https://github.com/Kai0071/A17/stargazers">
+  <a href="https://github.com/MrTharuwa/CYBER-PUNK/stargazers">
     <img src="https://img.shields.io/github/stars/Kai0071/A17?style=social">
 </p>
   
