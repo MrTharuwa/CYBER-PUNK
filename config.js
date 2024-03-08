@@ -17,7 +17,7 @@ global.autoreadgc = true;
 
 
 //
-global.prefa = ["!"];                                    //Default prefix here. you can change if you want.
+global.prefa = ["."];                                    //Default prefix here. you can change if you want.
 
 
 //
@@ -71,7 +71,7 @@ global.nttoxic = []
 global.ntnsfw = []
 global.ntvirtex = []
 global.rkyt = []
-global.wlcm = []
+global.wlcm = [hi]
 global.gcrevoke = []
 global.autorep = []
 global.ntilink = []
