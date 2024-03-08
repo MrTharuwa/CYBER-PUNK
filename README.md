@@ -6,7 +6,7 @@
 
 <p align="center">
    <a href="https://github.com/MrTharuwa/">
-    <img src="https://i.postimg.cc/DfY3ynx7/20240308-104326.png" width="249">
+    <img src="https://i.postimg.cc/DfY3ynx7/20240308-104326.png" width="1080">
 </p>
 
 <h1 align="center"> 𝙲𝚢𝚋𝚎𝚛 𝙿𝚞𝙽𝚔 𝙱𝚘𝚃 (Beta)</h1>
