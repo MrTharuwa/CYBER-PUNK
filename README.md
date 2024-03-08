@@ -20,23 +20,23 @@
 </p>
   
 <p align="center">
-  <a href="https://github.com/Kai0071/A17/fork">
+  <a href="https://github.com/MrTharuwa/CYBER-PUNK/fork">
     <img src="https://img.shields.io/github/forks/Kai0071/A17?label=Fork&style=social">
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kai0071/A17">
+  <a href="https://github.com/MrTharuwa/CYBER-PUNK">
     <img src="https://api.visitorbadge.io/api/visitors?path=Kai0071%2FA17&label=Repo%20Visitors&labelColor=%23697689&countColor=%23ba68c8&style=plastic&labelStyle=upper">
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kai0071">
+  <a href="https://github.com/MrTharuwa">
     <img title="Maintain" src="https://img.shields.io/badge/Maintain-Yes-cyan.svg?style=for-the-badge&logo=xcode" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kai0071">
+  <a href="https://github.com/MrTharuwa">
     <img title="Next Update" src="https://img.shields.io/badge/Next%20Update-Undefined!-green.svg?style=for-the-badge&logo=xcode" />
   </a>
 </p>
@@ -52,7 +52,7 @@
 <h2 align="center"> 🔰 Tap Here To Fork 🔰 </h2>
 
 <h2 align="center">
-  <a href="https://github.com/Kai0071/A17/fork">
+  <a href="https://github.com/MrTharuwa/CYBER-PUNK/fork">
     <img src="https://img.shields.io/badge/FORK A17 MD-h?color=white&style=for-the-badge&logo=stackshare" />
   </a>
 </h2>
@@ -63,7 +63,7 @@
 <h2 align="center"> 🍁  Run Repl for Multi Session QR  🍁 </h2>
 
 <h2 align="center">
-  <a href="https://replit.com/@Kai0071/A17-Multi-Session?v=1">
+  <a href="https://replit.com/@mrisuruheroku1/CYBER-PUNK-QR?v=1">
     <img src="https://repl.it/badge/github/quiec/whatsasena" />
   </a>
 </h2>
