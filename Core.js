@@ -700,16 +700,15 @@ Typed *surrender* to surrender and admited defeat`
       'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       ga: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
-       alive:fs.readFileSync("Assets/pic2.jpg") 
-       `⛬Hᴇʏ ${pushname} Iᴀᴍ Aʟɪᴠᴇ Nᴏᴡ
+       alive:`⛬Hᴇʏ ${pushname} Iᴀᴍ Aʟɪᴠᴇ Nᴏᴡ
 
 ╭────☛Cʏʙᴇʀ Pᴜɴᴋ☚─────⊷
 │ ╭──────────────◆
-│ │ 🤵‍♂️ USER:- ${pushname}
+│ │ 🤵 USER:- ${pushname}
 │ │ 🕹️ PREFIX:- [ ${prefix} ]
-│ │ 🤹‍♂️ OWNER:- ${global.OwnerName}
+│ │ 🧔‍♀️ OWNER:- ${global.OwnerName}
 │ │ ⏱️ UPTIME:- ${runtime(process.uptime())}
-│ │ 📟 MEM:- හදම ගහන් හුට්ට lol 
+│ │ 📟 MEM:- 
 │ ╰──────────────◆<
 ╰───────────────⊷
 ㅤ
@@ -737,7 +736,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
       //
-      case 'sc': case 'script': case 'sourcecode': {
+      case 'testt': case 'script': case 'sourcecode': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "⚡", key: m.key } })
