@@ -700,23 +700,23 @@ Typed *surrender* to surrender and admited defeat`
       'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       ga: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
-       alive: `⛬Hᴇʏ ${pushname} Iᴀᴍ Aʟɪᴠᴇ Nᴏᴡ
+       alive:fs.readFileSync("Assets/pic2.jpg") 
+       `⛬Hᴇʏ ${pushname} Iᴀᴍ Aʟɪᴠᴇ Nᴏᴡ
 
 ╭────☛Cʏʙᴇʀ Pᴜɴᴋ☚─────⊷
 │ ╭──────────────◆
 │ │ 🤵‍♂️ USER:- ${pushname}
 │ │ 🕹️ PREFIX:- [ ${prefix} ]
-│ │ 🤹‍♂️ OWNER:- 
+│ │ 🤹‍♂️ OWNER:- ${global.OwnerName}
 │ │ ⏱️ UPTIME:- ${runtime(process.uptime())}
 │ │ 📟 MEM:- හදම ගහන් හුට්ට lol 
 │ ╰──────────────◆<
 ╰───────────────⊷
 ㅤ
 *_ ᴄʏʙᴇʀ-ᴘᴜɴᴋ ᴡᴀ ᴜsᴇʀ ʙᴏᴛ _*
+*🌟 ᴅᴇᴠᴀʟᴏᴘᴇʀ ʙʏ ᴛʜᴀʀᴜᴡᴀ🌟*
 
-*_🌟 ᴅᴇᴠᴀʟᴏᴘᴇʀ ʙʏ ᴛʜᴀʀᴜᴡᴀ🌟_*
-
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`,
+ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`,
       
     };
 
