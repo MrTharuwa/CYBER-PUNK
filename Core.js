@@ -694,7 +694,7 @@ Typed *surrender* to surrender and admited defeat`
       runtime: `Hey ${pushname}\n${nowtime}\n\nMy runtime:${runtime(process.uptime())}\n\nPrefix is: *${prefix}*\n\nTime: ${kaitime}\n\nDate: ${kaidate}\n\nToday is ${currentDay}`,
       konichiwa: `Konichiwa ${pushname}, I am ${BotName}. How can I help you?`,
       Tharuwa: 'Cyber-punk-md-bot-creator',
-      ping: `📍*Pong ${latensie.toFixed(4)} ms*`,
+      ping: `📍 *Pong ${latensie.toFixed(4)} ms*`,
       'good morning': `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
       gm: `Good morning to you too ${pushname} ☺️. Have a great day 😇.`,
       'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
