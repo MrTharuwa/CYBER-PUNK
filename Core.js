@@ -706,10 +706,10 @@ Typed *surrender* to surrender and admited defeat`
 │ ╭──────────────◆
 │ │ 🤵‍♂️ USER:- ${pushname}
 │ │ 🕹️ PREFIX:- [ ${prefix} ]
-│ │ 🤹‍♂️ OWNER:- ${ownername}
+│ │ 🤹‍♂️ OWNER:- 
 │ │ ⏱️ UPTIME:- ${runtime(process.uptime())}
 │ │ 📟 MEM:- හදම ගහන් හුට්ට lol 
-│ ╰──────────────◆
+│ ╰──────────────◆<
 ╰───────────────⊷
 ㅤ
 *_ ᴄʏʙᴇʀ-ᴘᴜɴᴋ ᴡᴀ ᴜsᴇʀ ʙᴏᴛ _*
@@ -6826,7 +6826,7 @@ _Click the button below to download_`
         A17.sendMessage(from, { react: { text: "✨", key: m.key } })
         const helpmenu = `Hellow *${pushname}* Dear...!! ${nowtime} ,
   
-*Hellow, I am "Cyber punk" Multi Device Whatsapp User bot create by tharuwa*
+*Hᴇʟʟᴏ, I ᴀᴍ "Cyber punk" Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ Wʜᴛꜱᴀᴘᴘ Uꜱᴇʀ bᴏᴛ Cʀᴇᴀᴛᴇ Bʏ Mʀ Tʜᴀʀᴜᴡᴀ*
 
   *❘❘────Bᴏᴛ Iɴꜰᴏ────❘❘*
 
