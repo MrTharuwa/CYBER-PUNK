@@ -763,7 +763,7 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "💥", key: m.key } })
 
         let { data } = await axios.get('https://api.github.com/repos/MrTharuwa/CYBER-PUNK');
-        teks = `*⛬Hᴇʟʟᴏ ${} Iᴀᴍ Cʏʙᴇʀ Pᴜɴᴋ Wʜᴀᴛꜱᴀᴘᴘ Uꜱᴇʀ Bᴏᴛ*
+        teks = `*⛬Hᴇʟʟᴏ ${pushname} Iᴀᴍ Cʏʙᴇʀ Pᴜɴᴋ Wʜᴀᴛꜱᴀᴘᴘ Uꜱᴇʀ Bᴏᴛ*
 
 ╭────☛𝗔𝗹𝗶𝘃𝗲☚─────⊷
 │ ╭──────────────◆
@@ -778,7 +778,7 @@ Typed *surrender* to surrender and admited defeat`
 ╰───────────────⊷
  
   ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: 
-   `https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3`
+   https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
 ᴏᴜʀ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ɢʀᴏᴜᴘ:
 https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
 
