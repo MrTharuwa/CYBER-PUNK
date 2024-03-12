@@ -755,6 +755,42 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(m.chat, buttonMessage, { quoted: m })
       }
         break;
+        
+        
+      case 'alive': case 'live': case 'Alive': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "🔮", key: m.key } })
+
+        let { data } = await axios.get('https://api.github.com/repos/MrTharuwa/CYBER-PUNK');
+        teks = `*Cyber-punk*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/MrTharuwa/CYBER-PUNK\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+        /*  let buttons = [
+          {buttonId: `${prefix}owner`, buttonText: {displayText: '📍 DEVELOPER 📍'}, type: 1}
+          ] */
+        let buttonMessage = {
+          image: Thumb,
+          jpegThumbnail: BotLogo,
+          caption: teks,
+          /* footer: `${BotName}`,
+           buttons: buttons,
+           headerType: 4, */
+          contextInfo: {
+            externalAdreply: {
+              title: "Powered by Tharuwa",
+              body: " ",
+              thumbnail: fs.readFileSync("Assets/pic2.jpg"),
+              mediaType: 1,
+              //mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
+              //sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
+              mediaUrl: 'github.com/MrTharuwa/CYBER-PUNK',
+              sourceUrl: "github.com/MrTharuwa/CYBER-PUNK"
+            }
+          }
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
 
 
 
@@ -7139,34 +7175,6 @@ _Click the button below to download_`
           reply(`Do you need any help ${pushname} ? Type *${prefix}help* to get my full command list.`)
         }
 
-        break;
-
-
-      case 'alive': case 'a': case 'live': case 'alivemenu': case 'p': {
-        if (isBan) return reply(mess.banned);
-        if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
-        const helpmenu = `Hellow *${pushname}* Dear...!! ${nowtime} ,
-  
-*Hᴇʟʟᴏ, I ᴀᴍ "Cyber punk" Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ Wʜᴛꜱᴀᴘᴘ Uꜱᴇʀ bᴏᴛ Cʀᴇᴀᴛᴇ Bʏ Mʀ Tʜᴀʀᴜᴡᴀ*
-
-    ༆   🔮 Type 
-  ༆       full command list.
-  
-  ┬│▸☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*
-  ╰────────────···▸`
-        let buttonMessage = { 
-        image: Thumb,
-        jpegThumbnail: BotLogo,
-        caption: tesk,
-          thumbnail: fs.readFileSync("Assets/pic2.jpg"), gifPlayback: true,
-          caption: helpmenu,
-
-          headerType: 4
-
-        }
-        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
-      }
         break;
         
         
