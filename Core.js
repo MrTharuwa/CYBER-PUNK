@@ -763,26 +763,26 @@ Typed *surrender* to surrender and admited defeat`
         A17.sendMessage(from, { react: { text: "💥", key: m.key } })
 
         let { data } = await axios.get('https://api.github.com/repos/MrTharuwa/CYBER-PUNK');
-        teks = `*⛬Hᴇʟʟᴏ ${pushname} Iᴀᴍ Cʏʙᴇʀ Pᴜɴᴋ Wʜᴀᴛꜱᴀᴘᴘ Uꜱᴇʀ Bᴏᴛ*
+        teks = `*Hᴇʟʟᴏ ${pushname} Iᴀᴍ Cʏʙᴇʀ Pᴜɴᴋ Wʜᴀᴛꜱᴀᴘᴘ Uꜱᴇʀ Bᴏᴛ*
 
 ╭────☛𝗔𝗹𝗶𝘃𝗲☚─────⊷
 │ ╭──────────────◆
-│ │ ➫Bᴏᴛ Nᴀᴍᴇ - Cʏʙᴇʀ-Pᴜɴᴋ
-│ │ ➫Pʀᴏꜰɪx - ${prefix}
-│ │ ➫Oᴡɴᴇʀ - ${global.OwnerName}
-│ │ ➫ Uᴘᴛɪᴍᴇ - ${runtime(process.uptime())}
-│ │ ➫Bᴏᴛ Nᴜᴍʙᴇʀ - ${global.OwnerNumber}
-│ │ ➫Pʟᴀᴛꜰᴏʀᴍ - ${kaidate}
-│ │ ➫Dᴇᴠᴇʟᴏᴘᴇʀ - ${global.author}
+│ │ ➫ *Bᴏᴛ Nᴀᴍᴇ - Cʏʙᴇʀ-Pᴜɴᴋ*
+│ │ ➫ *Pʀᴏꜰɪx* - ${prefix}
+│ │ ➫ *Oᴡɴᴇʀ* - ${global.OwnerName}
+│ │ ➫ *Uᴘᴛɪᴍᴇ* - ${runtime(process.uptime())}
+│ │ ➫ *Bᴏᴛ Nᴜᴍʙᴇʀ* - ${global.OwnerNumber}
+│ │ ➫ *Dᴇᴠᴇʟᴏᴘᴇʀ* - ${global.author}
 │ ╰──────────────◆
 ╰───────────────⊷
+ `My hope is to create a qualitative and easy to use WhatsApp bot`
  
-  ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: 
-   https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
-ᴏᴜʀ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ɢʀᴏᴜᴘ:
+   *ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ:* https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
+
+*ᴏᴜʀ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ɢʀᴏᴜᴘ:*
 https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
 
- *Dᴇᴠᴇʟᴏᴘᴇʀ Bʏ Tʜᴀʀᴜᴡᴀ*
+ *_Dᴇᴠᴇʟᴏᴘᴇʀ Bʏ Tʜᴀʀᴜᴡᴀ_*
 *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '📍 DEVELOPER 📍'}, type: 1}
