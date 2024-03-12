@@ -775,7 +775,7 @@ Typed *surrender* to surrender and admited defeat`
 │ │ ➫ *Dᴇᴠᴇʟᴏᴘᴇʀ* - ${global.author}
 │ ╰──────────────◆
 ╰───────────────⊷
- `My hope is to create a qualitative and easy to use WhatsApp bot`
+ My hope is to create a qualitative and easy to use WhatsApp bot
  
    *ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ:* https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
 
