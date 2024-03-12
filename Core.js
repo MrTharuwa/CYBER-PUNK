@@ -760,10 +760,30 @@ Typed *surrender* to surrender and admited defeat`
       case 'alive': case 'live': case 'Alive': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "🔮", key: m.key } })
+        A17.sendMessage(from, { react: { text: "💥", key: m.key } })
 
         let { data } = await axios.get('https://api.github.com/repos/MrTharuwa/CYBER-PUNK');
-        teks = `*Cyber-punk*\n\n*Total Stars*: ${data.stargazers_count}⭐\n*Total Forks*: ${data.forks_count} forks\n*GitHub*: https://github.com/MrTharuwa/CYBER-PUNK\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+        teks = `*⛬Hᴇʟʟᴏ ${} Iᴀᴍ Cʏʙᴇʀ Pᴜɴᴋ Wʜᴀᴛꜱᴀᴘᴘ Uꜱᴇʀ Bᴏᴛ*
+
+╭────☛𝗔𝗹𝗶𝘃𝗲☚─────⊷
+│ ╭──────────────◆
+│ │ ➫Bᴏᴛ Nᴀᴍᴇ - Cʏʙᴇʀ-Pᴜɴᴋ
+│ │ ➫Pʀᴏꜰɪx - ${prefix}
+│ │ ➫Oᴡɴᴇʀ - ${global.OwnerName}
+│ │ ➫ Uᴘᴛɪᴍᴇ - ${runtime(process.uptime())}
+│ │ ➫Bᴏᴛ Nᴜᴍʙᴇʀ - ${global.OwnerNumber}
+│ │ ➫Pʟᴀᴛꜰᴏʀᴍ - ${kaidate}
+│ │ ➫Dᴇᴠᴇʟᴏᴘᴇʀ - ${global.author}
+│ ╰──────────────◆
+╰───────────────⊷
+ 
+  ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: 
+   `https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3`
+ᴏᴜʀ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ɢʀᴏᴜᴘ:
+https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
+
+ *Dᴇᴠᴇʟᴏᴘᴇʀ Bʏ Tʜᴀʀᴜᴡᴀ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '📍 DEVELOPER 📍'}, type: 1}
           ] */
