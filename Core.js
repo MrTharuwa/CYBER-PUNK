@@ -4963,7 +4963,7 @@ _Click the button below to download_`
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         let buttons = [
-          { buttonId: `${prefix}menu`, buttonText: { displayText: '✨Menu✨' }, type: 1 }
+          { buttonId: `${prefix}menu`, buttonText: { displayText: '✨/✨' }, type: 1 }
         ]
         let buttonMessage = {
           video: { url: args[0] },
@@ -7155,7 +7155,10 @@ _Click the button below to download_`
   
   ┬│▸☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*
   ╰────────────···▸`
-        let buttonMessage = {
+        let buttonMessage = { 
+        image: Thumb,
+        jpegThumbnail: BotLogo,
+        caption: tesk,
           thumbnail: fs.readFileSync('Assets/pic2.jpg'), gifPlayback: true,
           caption: helpmenu,
 
