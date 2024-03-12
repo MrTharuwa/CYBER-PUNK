@@ -2172,7 +2172,7 @@ Typed *surrender* to surrender and admited defeat`
       case 'animesearchxxx': case 'anime':{
           await fetchJson(`https://api.jikan.moe/v4/anime/${q}`)
           .then((res) => {
-          let txt = `   _Anime Search Engine_ \n\n*Title:* *${res.data.title}*\n*English:* *${res.data.title_english}*\n*Japanese:* *${res.data.title_japanese}*\n*Anime Type:* *${res.data.type}*\n*Adaptation:* *${res.data.source}*\n*Total Episode:* *${res.data.episodes}*\n*Status:* *${res.data.status}*\n*Ongoing:* *${res.data.airing ? 'Yes' : 'No'}*\n*Aired:* *${res.data.aired.string}*\n*Duration:* *${res.data.duration}*\n*Rating:* *${res.data.rating}*\n*Score:* *${res.data.score}*\n*Rank:* *${res.data.rank}*\n*Main Producer:* *${res.data.producers.name}*\n*Studio:* *${res.data.studios[0].name}* `
+          let txt = `   _Anime Search Engine_ \n\n*Title:* *${res.data.title}*\n*English:* *${res.data.title_english}*\n*Japanese:* *${res.data.title_japanese}*\n*Anime Type:* *${res.data.type}*\n*Adaptation:* *${res.data.source}*\n*Total Episode:* *${res.data.episodes}*\n*Status:* *${res.data.status}*\n*Ongoing:* *${res.data.airing ? 'Yes' : 'No'}*\n*Aired:* *${res.data.aired.string}*\n*Duration:* *${res.data.duration}*\n*Rating:* *${res.data.rating}*\n*Score:* *${res.data-ore}*\n*Rank:* *${res.data.rank}*\n*Main Producer:* *${res.data.producers.name}*\n*Studio:* *${res.data.studios[0].name}* `
           A17.sendMessage(from, { image : { url : res.data.images.jpg.image_url}, caption : txt}, {quoted :m }) 
           })
           }
@@ -7157,7 +7157,32 @@ _Click the button below to download_`
         break;
 
 
-      case '':
+      case 'alive': case 'a': case 'live': case 'alivemenu': case 'p': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+        A17.sendMessage(from, { react: { text: "✨", key: m.key } })
+        const helpmenu = `Hellow *${pushname}* Dear...!! ${nowtime} ,
+  
+*Hᴇʟʟᴏ, I ᴀᴍ "Cyber punk" Mᴜʟᴛɪ Dᴇᴠɪᴄᴇ Wʜᴛꜱᴀᴘᴘ Uꜱᴇʀ bᴏᴛ Cʀᴇᴀᴛᴇ Bʏ Mʀ Tʜᴀʀᴜᴡᴀ*
+
+    ༆   🔮 Type 
+  ༆       full command list.
+  
+  ┬│▸☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*
+  ╰────────────···▸`
+        let buttonMessage = {
+          video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
+          caption: helpmenu,
+
+          headerType: 4
+
+        }
+        A17.sendMessage(m.chat, buttonMessage, { quoted: m })
+      }
+        break;
+        
+        
+        case '':
         if (isCmd) {
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
