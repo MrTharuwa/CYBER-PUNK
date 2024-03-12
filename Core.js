@@ -7159,7 +7159,7 @@ _Click the button below to download_`
         image: Thumb,
         jpegThumbnail: BotLogo,
         caption: tesk,
-          thumbnail: fs.readFileSync('Assets/pic2.jpg'), gifPlayback: true,
+          thumbnail: fs.readFileSync("Assets/pic2.jpg"), gifPlayback: true,
           caption: helpmenu,
 
           headerType: 4
