@@ -647,8 +647,8 @@ Typed *surrender* to surrender and admited defeat`
   }
   
   
-  if (smallinput=='alive') {
-      reply ('Yes I am Alive 🫂')
+  if (smallinput=='Tharuwa') {
+      reply ('Yes I am Tharuwa 🫂')
   }
   
   if (smallinput=='Tharuwa') {
@@ -700,22 +700,7 @@ Typed *surrender* to surrender and admited defeat`
       'good afternoon': `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       ga: `Good afternoon to you too ${pushname} ✨. Wishing you an enjoyable afternoon too 😇🤞🏻.`,
       'good night': `Good night to you too ${pushname} 😇. Sleep well and sweet dreams.`,
-       alive:`⛬Hᴇʏ ${pushname} Iᴀᴍ Aʟɪᴠᴇ Nᴏᴡ
-
-╭────☛Cʏʙᴇʀ Pᴜɴᴋ☚─────⊷
-│ ╭──────────────◆
-│ │ 🤵 USER:- ${pushname}
-│ │ 🕹️ PREFIX:- [ ${prefix} ]
-│ │ 🧔‍♀️ OWNER:- ${global.OwnerName}
-│ │ ⏱️ UPTIME:- ${runtime(process.uptime())}
-│ │ 📟 MEM:- 
-│ ╰──────────────◆<
-╰───────────────⊷
-ㅤ
-*_ ᴄʏʙᴇʀ-ᴘᴜɴᴋ ᴡᴀ ᴜsᴇʀ ʙᴏᴛ _*
-*🌟 ᴅᴇᴠᴀʟᴏᴘᴇʀ ʙʏ ᴛʜᴀʀᴜᴡᴀ🌟*
-
- *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`,
+       Tharuwa:`Tharuwa`,
       
     };
 
@@ -736,7 +721,7 @@ Typed *surrender* to surrender and admited defeat`
 
 
       //
-      case 'testt': case 'script': case 'sourcecode': {
+      case 'sc': case 'script': case 'sourcecode': {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
         A17.sendMessage(from, { react: { text: "⚡", key: m.key } })
@@ -7171,7 +7156,7 @@ _Click the button below to download_`
   ┬│▸☑ *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀꜱᴛᴇᴀᴍ*
   ╰────────────···▸`
         let buttonMessage = {
-          video: fs.readFileSync('./system/A17_3.mp4'), gifPlayback: true,
+          thumbnail: fs.readFileSync('Assets/pic2.jpg'), gifPlayback: true,
           caption: helpmenu,
 
           headerType: 4
