@@ -51,7 +51,7 @@ const store = makeInMemoryStore({
 async function startA17() {
   console.log(
     color(
-      figlet.textSync("Cyber punk Bot MD", {
+      figlet.textSync("A17 Bot MD", {
         font: "Standard",
         horizontalLayout: "default",
         vertivalLayout: "default",
@@ -62,10 +62,10 @@ async function startA17() {
       "green"
     )
   );
-  console.log(color('\nHello, I am Tharusha, the main Developer of this bot.\n\nThanks for using: Cyber punk Bot.', 'aqua'))
-  console.log(color('\nYou can follow me on GitHub: MrTharuwa', 'aqua'))
+  console.log(color('\nHello, I am Kai, the main Developer of this bot.\n\nThanks for using: A17 Bot.', 'aqua'))
+  console.log(color('\nYou can follow me on GitHub: Kai0071', 'aqua'))
 
-  const { state, saveCreds } = await useMultiFileAuthState("./CYBERPUNK-SESSION");
+  const { state, saveCreds } = await useMultiFileAuthState("./A17-SESSION");
   const A17 = A17Connect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
@@ -103,7 +103,7 @@ async function startA17() {
       if (mek.key && mek.key.remoteJid === "status@broadcast") return;
       if (!A17.public && !mek.key.fromMe && chatUpdate.type === "notify")
         return;
-      if (mek.key.id.startsWith("BAE5") && mek.key.id.length === 16) return;*
+      if (mek.key.id.startsWith("BAE5") && mek.key.id.length === 16) return;
       m = smsg(A17, mek, store);
       require("./Core")(A17, m, chatUpdate, store);
     } catch (err) {
@@ -275,7 +275,7 @@ async function startA17() {
             A17text = `
 Hello @${WAuserName.split("@")[0]},
 
-I am *Cyber punk  Bot*, Welcome to ${metadata.subject}.
+I am *A17 Bot*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}
