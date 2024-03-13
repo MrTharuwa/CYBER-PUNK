@@ -886,7 +886,7 @@ https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
 
-        A17.sendMessage(from, { react: { text: "🎊", key: m.key } })
+        A17.sendMessage(from, { react: { text: "🌐", key: m.key } })
         reply(`📍 *Pong ${latensie.toFixed(4)} ms*`)
       }
         break;
@@ -4568,11 +4568,13 @@ https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
         if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} anything...`)
         let google = require('google-it')
         google({ 'query': args.join(" ") }).then(res => {
-          let teks = `「 *Google Search Engine* 」\n\n*Search term:* ${text}\n\n\n`
+          let teks = `「 *CYBER-PUNK GOOGLE SEARCH* 」\n\n*Search term:* ${text}\n\n\n`
           for (let g of res) {
             teks += `*Title* : ${g.title}\n\n`
             teks += `*Description* : ${g.snippet}\n\n`
-            teks += `*Link* : ${g.link}\n\n\n        -----------------------------------------------------------------------------\n\n`
+            teks += `*Link* : ${g.link}\n\n\n       
+  *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ* 
+  -----------------------------------------------------------------------------\n\n`
           }
           reply(teks)
         })
@@ -4583,7 +4585,7 @@ https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
       case "tts": case "texttospeech": case "say": case "speak": {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "⌛", key: m.key } })
+        A17.sendMessage(from, { react: { text: "⏰", key: m.key } })
 
         if (!args[0]) return reply("Please give me a text so that i can speak it!")
 
