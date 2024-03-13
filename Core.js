@@ -880,6 +880,16 @@ https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
         reply(`⚙ *Support group:* https://chat.whatsapp.com/GnhXCwmfFZy8t9IL3t64xw`)
       }
         break;
+        
+        
+      case 'ping': case 'p': {
+        if (isBan) return reply(mess.banned);
+        if (isBanChat) return reply(mess.bangc);
+
+        A17.sendMessage(from, { react: { text: "🎊", key: m.key } })
+        reply(`📍 *Pong ${latensie.toFixed(4)} ms*`)
+      }
+        break;
 
 
       case 'repo': case 'botrepo': {
@@ -7326,7 +7336,6 @@ _Click the button below to download_`
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
-          reply(`Hey *${pushname}* this command are not programmed! Type The *${prefix}menu* to get full cmd list!`)
 
         }
 
