@@ -227,14 +227,6 @@ Comment out/delete /* , */ the code form your Core.js  in your own repo -- [`Cor
 <h1 align="center">  ⭐ Spacial Thanks To ⭐
 </h1>
 
-* [`🎐 FantoX`](https://github.com/FantoX001)
-* [`🎐 Guru`](https://github.com/Guru322)
-* [`🎐 Itz Me`](https://github.com/teamolduser)
-* [`🎐 Ahmii-kun`](https://github.com/Ahmii-kun)
-* [`🎐 Xeon`](https://github.com/DGXeon)
-* [`🎐 Aswin`](https://github.com/Sparkymon777)
-* [`🎐 Pikachu`](https://github.com/PikaBotz)
-* [`🎐 Shubham`](https://github.com/Devil0074)
 <br>
 <br>
 <h2 align="center"> ✧ Join My WhatsApp Group For Support ✧ </h2>
