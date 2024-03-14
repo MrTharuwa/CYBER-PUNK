@@ -783,7 +783,7 @@ Typed *surrender* to surrender and admited defeat`
 https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
 
  *_Dᴇᴠᴇʟᴏᴘᴇʀ Bʏ Tʜᴀʀᴜᴡᴀ_*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀ™*`
         /*  let buttons = [
           {buttonId: `${prefix}owner`, buttonText: {displayText: '📍 DEVELOPER 📍'}, type: 1}
           ] */
@@ -878,16 +878,6 @@ https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
 
         A17.sendMessage(from, { react: { text: "💫", key: m.key } })
         reply(`⚙ *Support group:* https://chat.whatsapp.com/GnhXCwmfFZy8t9IL3t64xw`)
-      }
-        break;
-        
-        
-      case 'ping': case 'p': {
-        if (isBan) return reply(mess.banned);
-        if (isBanChat) return reply(mess.bangc);
-
-        A17.sendMessage(from, { react: { text: "🌐", key: m.key } })
-        reply(`📍 *Pong ${latensie.toFixed(4)} ms*`)
       }
         break;
 
@@ -2862,7 +2852,7 @@ https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
   💕 Followers : ${gitdata.followers}
   👉 Following : ${gitdata.following}
  
-   *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`
+   *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀ™*`
         }, { quoted: m })
       }
         break;
@@ -4568,13 +4558,11 @@ https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
         if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} anything...`)
         let google = require('google-it')
         google({ 'query': args.join(" ") }).then(res => {
-          let teks = `「 *CYBER-PUNK GOOGLE SEARCH* 」\n\n*Search term:* ${text}\n\n\n`
+          let teks = `「 *Google Search Engine* 」\n\n*Search term:* ${text}\n\n\n`
           for (let g of res) {
             teks += `*Title* : ${g.title}\n\n`
             teks += `*Description* : ${g.snippet}\n\n`
-            teks += `*Link* : ${g.link}\n\n\n       
-  *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ* 
-  -----------------------------------------------------------------------------\n\n`
+            teks += `*Link* : ${g.link}\n\n\n        -----------------------------------------------------------------------------\n\n`
           }
           reply(teks)
         })
@@ -4585,7 +4573,7 @@ https://chat.whatsapp.com/Gc57xISsvbr11QdC8KOoj3
       case "tts": case "texttospeech": case "say": case "speak": {
         if (isBan) return reply(mess.banned);
         if (isBanChat) return reply(mess.bangc);
-        A17.sendMessage(from, { react: { text: "⏰", key: m.key } })
+        A17.sendMessage(from, { react: { text: "⌛", key: m.key } })
 
         if (!args[0]) return reply("Please give me a text so that i can speak it!")
 
@@ -5130,7 +5118,7 @@ _Click the button below to download_`
 
       /*
         	
-      case 'music': case 'p': case 'play': case 'song': case 'ytplay': {
+      case 'music': case 'playng': case 'play': case 'song': case 'ytplay': {
           if (isBan) return reply(mess.banned);	 			
        if (isBanChat) return reply(mess.bangc);
        A17.sendMessage(from, { react: { text: "🎶" , key: m.key }}) 
@@ -5162,7 +5150,7 @@ _Click the button below to download_`
       
       🔗 *Url :* ${anu.url}
       
-   *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`,
+   **ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀ™**`,
          
        footer: `${global.BotName}`,
        buttons: buttons,
@@ -5226,7 +5214,7 @@ _Click the button below to download_`
 
   🔗 *Url :* ${anu.url}\n
   
-  *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`,
+  *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀ™*`,
 
           },
           { quoted: m }
@@ -7270,7 +7258,7 @@ _Click the button below to download_`
 
         const weathertext = `           🌤 *Weather Report* 🌤  \n\n🔎 *Search Location:* ${myweather.data.name}\n*💮 Country:* ${myweather.data.sys.country}\n🌈 *Weather:* ${myweather.data.weather[0].description}\n🌡️ *Temperature:* ${myweather.data.main.temp}°C\n❄️ *Minimum Temperature:* ${myweather.data.main.temp_min}°C\n📛 *Maximum Temperature:* ${myweather.data.main.temp_max}°C\n💦 *Humidity:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n
         
-     *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀᵀᴹ*`
+     *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʏʙᴇʀᴋɪʟʟᴇʀ™*`
         A17.sendMessage(from, { video: { url: 'https://media.tenor.com/bC57J4v11UcAAAPo/weather-sunny.mp4' }, gifPlayback: true, caption: weathertext }, { quoted: m })
 
         break;
@@ -7338,6 +7326,7 @@ _Click the button below to download_`
           if (isBan) return reply(mess.banned);
           if (isBanChat) return reply(mess.bangc);
           A17.sendMessage(from, { react: { text: "❌", key: m.key } })
+          reply(`Hey *${pushname}* this command are not programmed! Type The *${prefix}menu* to get full cmd list!`)
 
         }
 
